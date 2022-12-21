@@ -1,0 +1,61 @@
+export default {
+    hostingPort: 5000,
+    apiSettings: {
+        enabledApi: true,
+        apiUrl: "http://l2_game_api_AWS:5000",
+        authUrl: "http://l2_auth_api_AWS:5000",
+        client: {
+            id: "game-server",
+            secret: "gameserver@20luminet&",
+        },
+        useAuthenticate: true,
+        placeBetTimeout: 4000,
+        requestTimeout: 10000, // 10s
+        hitJackpotTimeout: 200000,
+        enabledApiLogs: true,
+    },
+    authenticateSettings: {
+        url: "http://l2_auth_api_AWS:5000",
+        id: "game-services",
+        secret: "gameservices@20luminet&",
+        requestTimeout: 10000,
+        useAuthenticate: true,
+        audiences: ["api", "admin-api"],
+    },
+    userServiceSettings: {
+        url: "http://localhost:8004/api",
+    },
+    notificationServiceSettings: {
+        url: "http://l2_notification_service_AWS:5000/api",
+    },
+    socketOptions: {
+        pingInterval: 60 * 1000,
+        pingTimeout: 60 * 1000,
+        transports: ["websocket"],
+        allowUpgrades: false,
+        perMessageDeflate: false,
+    },
+    enabledLogs: true,
+    database: {
+        url: "mongodb://lmn_backend:ilthODrRz8C4s2%5D%7B%7CLV%3Du%5D2vsf6o%5Ex0m@10.99.99.56:37101/?replicaSet=L2_SabaAWS",
+        options: {
+            dbName: "minigame",
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            auto_reconnect: true,
+        },
+    },
+    sentry: {
+        sentryUrl: "http://2b5b82bf699543ddb296364568bc30be@10.99.99.187:803/52",
+        logIdentifier: "fourguardians",
+        env: "AWS",
+    },
+    authenticateSettings: {
+        audiences: ["api", "admin-api"],
+    },
+    adminSecretKey: "asWDEer4yGdgsdqR4uqmKQZgh",
+    enableCorsWs: true,
+    orsUrls: ["https://sc2-games.sportsfun.app", "https://sc2-adm.sportsfun.app"],
+    freeSpinLiveSeconds: 86400, // 1 day
+    bonusLiveSeconds: 123,
+};

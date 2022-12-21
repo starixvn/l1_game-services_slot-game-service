@@ -1,0 +1,12 @@
+variables:
+  SMOKE_PRODUCT_NAME: FourGuardians
+  
+include:
+  - project: "ci/repos-ci/pentagon_l1_four_guardians_service"
+    ref: master
+    file: "gitlab-ci.yml"
+  - project: "ci/repos-ci/pentagon_l2_four_guardians_service"
+    ref: master
+    file: "gitlab-ci-mixing.yml"
+
+  
