@@ -3,7 +3,7 @@ import * as Slot from "sc-slot-game-base";
 import { rounds, fames, freeSpins } from "./models/";
 import SlotGamePlayGamePermissionValidator from "./validators/slot-game-play-game-permission-validator";
 
-const { asClass } = awilix;
+const { asClass, asValue } = awilix;
 
 export default class SlotGameContainerRegistry extends Slot.SlotContainerRegistry {
     registerValidators() {
