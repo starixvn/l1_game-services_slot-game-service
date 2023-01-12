@@ -2,9 +2,9 @@ variables:
   SMOKE_PRODUCT_NAME: HappyFish
   
 include:
-  - project: "ci/repos-ci/pentagon_l1_happyfish_service"
+  - project: "ci/repos-ci/pentagon_l1_magicdark_service"
     ref: master
     file: "gitlab-ci.yml"
-  - project: "ci/repos-ci/pentagon_l2_happyfish_service"
+  - project: "ci/repos-ci/pentagon_l2_magicdark_service"
     ref: master
     file: "gitlab-ci-mixing.yml"
