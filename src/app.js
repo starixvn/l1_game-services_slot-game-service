@@ -18,7 +18,7 @@ const run = async () => {
 
         if (gameConfigs) {
             gameSettings.id = gameConfigs.gameId;
-            gameSettings.name = appName;
+            gameSettings.name = gameConfigs.displayName.replace(/ /g, "");
 
             const gameData = new SlotGameData(gameSettings.durations.wholeRound);
             const definition = new SlotGameDefinition(gameSettings);
