@@ -8,3 +8,6 @@ include:
   - project: "ci/repos-ci/pentagon_l2_magicdark_service"
     ref: master
     file: "gitlab-ci-mixing.yml"
+  - project: "ci/common-ci"
+    ref: rocketor
+    file: "integration-test/nodejs-integration-test.gitlab-ci.yml"
