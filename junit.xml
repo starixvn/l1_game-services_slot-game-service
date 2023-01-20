@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="6" failures="0" errors="0" time="69.915">
-  <testsuite name="signin" errors="0" failures="0" skipped="0" timestamp="2022-09-29T07:05:09" time="69.782" tests="6">
-    <testcase classname="signin should receive signed in response" name="signin should receive signed in response" time="0.088">
+<testsuites name="jest tests" tests="8" failures="0" errors="0" time="29.232">
+  <testsuite name="signin" errors="0" failures="0" skipped="0" timestamp="2023-01-20T08:43:13" time="29.025" tests="8">
+    <testcase classname="signin should receive signed in response" name="signin should receive signed in response" time="0.099">
     </testcase>
-    <testcase classname="when user joins game should return game configs, odds" name="when user joins game should return game configs, odds" time="0.09">
+    <testcase classname="when user joins game should return game configs" name="when user joins game should return game configs" time="0.114">
     </testcase>
-    <testcase classname="event place bet should start and allow game client connect to." name="event place bet should start and allow game client connect to." time="0.057">
+    <testcase classname="when user joins game should return user info" name="when user joins game should return user info" time="0.108">
     </testcase>
-    <testcase classname="event place bet when valid bet should return endBet info with runningRound" name="event place bet when valid bet should return endBet info with runningRound" time="0.003">
+    <testcase classname="settle when win bonus should receive bonus" name="settle when win bonus should receive bonus" time="0.11">
     </testcase>
-    <testcase classname="event get history should start and allow game client connect to." name="event get history should start and allow game client connect to." time="0.064">
+    <testcase classname="settle when win bonus when user open bonus box should receive bonus chest amount" name="settle when win bonus when user open bonus box should receive bonus chest amount" time="0.003">
     </testcase>
-    <testcase classname="event get history should return bets with details" name="event get history should return bets with details" time="46.224">
+    <testcase classname="settle when win freeSpin should receive result having free spins" name="settle when win freeSpin should receive result having free spins" time="0.126">
+    </testcase>
+    <testcase classname="settle when win freeSpin when process free spins should receive endBet with correct bet value &amp; freeSpin is true" name="settle when win freeSpin when process free spins should receive endBet with correct bet value &amp; freeSpin is true" time="0.141">
+    </testcase>
+    <testcase classname="settle when win freeSpin when process free spins should receive finish with betByFreeSpin is true" name="settle when win freeSpin when process free spins should receive finish with betByFreeSpin is true" time="0.092">
     </testcase>
   </testsuite>
 </testsuites>
