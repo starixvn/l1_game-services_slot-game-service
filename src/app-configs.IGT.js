@@ -2,6 +2,8 @@ import appConfigs from "./app-configs";
 
 export default Object.assign(appConfigs, {
     hostingPort: 5002,
+    id: 999,
+    name: "ClassicSlot",
     authenticateSettings: {
         url: "http://l1_auth_api_local:5000",
         id: "game-services",

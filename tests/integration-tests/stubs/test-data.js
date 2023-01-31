@@ -1,7 +1,6 @@
-import gameSetting from "../../../src/game-settings";
 const game = {
-    id: gameSetting.id,
-    name: gameSetting.name,
+    id: 999,
+    name: "ClassicSlot",
 };
 
 const currencyData = { code: "USD", name: "$US" };
@@ -15,7 +14,7 @@ const socketOptions = {
 const gameConfig = {
     type: 2,
     name: "classicslot",
-    gameId: 1000,
+    gameId: 999,
     displayName: "Classic Slot",
     slotsConfig: {
         mode: 1,

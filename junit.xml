@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="8" failures="0" errors="0" time="29.232">
-  <testsuite name="signin" errors="0" failures="0" skipped="0" timestamp="2023-01-20T08:43:13" time="29.025" tests="8">
-    <testcase classname="signin should receive signed in response" name="signin should receive signed in response" time="0.099">
+<testsuites name="jest tests" tests="8" failures="0" errors="0" time="29.369">
+  <testsuite name="signin" errors="0" failures="0" skipped="0" timestamp="2023-01-30T04:23:42" time="29.194" tests="8">
+    <testcase classname="signin should receive signed in response" name="signin should receive signed in response" time="0.116">
     </testcase>
-    <testcase classname="when user joins game should return game configs" name="when user joins game should return game configs" time="0.114">
+    <testcase classname="when user joins game should return game configs" name="when user joins game should return game configs" time="0.111">
     </testcase>
-    <testcase classname="when user joins game should return user info" name="when user joins game should return user info" time="0.108">
+    <testcase classname="when user joins game should return user info" name="when user joins game should return user info" time="0.093">
     </testcase>
-    <testcase classname="settle when win bonus should receive bonus" name="settle when win bonus should receive bonus" time="0.11">
+    <testcase classname="settle when win bonus should receive bonus" name="settle when win bonus should receive bonus" time="0.146">
     </testcase>
-    <testcase classname="settle when win bonus when user open bonus box should receive bonus chest amount" name="settle when win bonus when user open bonus box should receive bonus chest amount" time="0.003">
+    <testcase classname="settle when win bonus when user open bonus box should receive bonus chest winning amount" name="settle when win bonus when user open bonus box should receive bonus chest winning amount" time="0.004">
     </testcase>
-    <testcase classname="settle when win freeSpin should receive result having free spins" name="settle when win freeSpin should receive result having free spins" time="0.126">
+    <testcase classname="settle when win freeSpin should receive result having free spins" name="settle when win freeSpin should receive result having free spins" time="0.117">
     </testcase>
-    <testcase classname="settle when win freeSpin when process free spins should receive endBet with correct bet value &amp; freeSpin is true" name="settle when win freeSpin when process free spins should receive endBet with correct bet value &amp; freeSpin is true" time="0.141">
+    <testcase classname="settle when win freeSpin when process free spins should receive endBet with correct bet value &amp; freeSpin is true" name="settle when win freeSpin when process free spins should receive endBet with correct bet value &amp; freeSpin is true" time="0.101">
     </testcase>
-    <testcase classname="settle when win freeSpin when process free spins should receive finish with betByFreeSpin is true" name="settle when win freeSpin when process free spins should receive finish with betByFreeSpin is true" time="0.092">
+    <testcase classname="settle when win freeSpin when process free spins should receive finish with betByFreeSpin is true" name="settle when win freeSpin when process free spins should receive finish with betByFreeSpin is true" time="0.131">
     </testcase>
   </testsuite>
 </testsuites>
