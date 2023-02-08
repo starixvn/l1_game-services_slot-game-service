@@ -5,12 +5,6 @@ variables:
   NODEJS_INTEGRATION_TEST_DB_IMAGE_VERSION: registry.nexdev.net:5050/docker/database/mongo:4.4.8
   
 include:
-  - project: "ci/repos-ci/pentagon_l1_magicdark_service"
-    ref: master
-    file: "gitlab-ci.yml"
-  - project: "ci/repos-ci/pentagon_l2_magicdark_service"
-    ref: master
-    file: "gitlab-ci-mixing.yml"
-  - project: "ci/common-ci"
-    ref: rocketor
-    file: "integration-test/nodejs-integration-test.gitlab-ci.yml"
+  - project: ci/common-ci
+    ref: cicd
+    file: luminet.gitlab-ci.yml

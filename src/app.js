@@ -9,12 +9,13 @@ const run = async () => {
     const appName = process.env.APP_NAME;
 
     if (appName) {
-        appConfigs.database.url = appConfigs.database.url.concat(`&appName=${appName}`);
+        const gameName = appName.split("_")[0];
+        appConfigs.database.url = appConfigs.database.url.concat(`&appName=${gameName.toLowerCase()}`);
 
-        const app = new Core.BaseGameApp(appName, appConfigs);
+        const app = new Core.BaseGameApp(gameName, appConfigs);
         await app.run();
 
-        const gameConfigs = await gameConfigsRepository.findOne({ name: appName.toLowerCase() }).lean().exec();
+        const gameConfigs = await gameConfigsRepository.findOne({ name: gameName.toLowerCase() }).lean().exec();
 
         if (gameConfigs) {
             gameSettings.id = gameConfigs.gameId;
