@@ -9,7 +9,8 @@ const run = async () => {
     const appName = process.env.APP_NAME;
 
     if (appName) {
-        const gameName = appName.split("_")[0];
+        const gameName = appName.replace("service", "").replaceAll("_", "");
+
         appConfigs.database.url = appConfigs.database.url.concat(`&appName=${gameName.toLowerCase()}`);
 
         const app = new Core.BaseGameApp(gameName, appConfigs);
