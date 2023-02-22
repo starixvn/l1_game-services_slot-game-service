@@ -5,6 +5,6 @@ variables:
   NODEJS_INTEGRATION_TEST_DB_IMAGE_VERSION: registry.nexdev.net:5050/docker/database/mongo:4.4.8
   
 include:
-  - project: ci/common-ci
-    ref: cicd
+  - project: ci/core-cicd
+    ref: main
     file: luminet.gitlab-ci.yml
