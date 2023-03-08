@@ -1,7 +1,7 @@
 import { gameConfigs as gameConfigsRepository } from "sc-base-database";
 import { logger } from "sc-common";
 import { Core } from "sc-game-base";
-import { SlotGameData, SlotGameDefinition } from "sc-slot-game-base";
+import { SlotGameData, SlotGameDefinition, SlotGameApp } from "sc-slot-game-base";
 import appConfigs from "./app-configs";
 import gameSettings from "./game-settings";
 import SlotGameContainerRegistry from "./slot-game-container-registry";
@@ -15,7 +15,7 @@ const run = async () => {
         appConfigs.database.url = appConfigs.database.url.concat(`&appName=${gameName.toLowerCase()}`);
         appConfigs.sentry.logIdentifier = gameName.toLowerCase();
 
-        const app = new Core.BaseGameApp(gameName, appConfigs);
+        const app = new SlotGameApp(gameName, appConfigs);
         await app.run();
 
         const gameConfigs = await gameConfigsRepository.findOne({ name: gameName.toLowerCase() }).lean().exec();
