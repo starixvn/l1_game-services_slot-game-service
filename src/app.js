@@ -12,6 +12,7 @@ const run = async () => {
         const gameName = appName.replace("service", "").replaceAll("_", "");
 
         appConfigs.database.url = appConfigs.database.url.concat(`&appName=${gameName.toLowerCase()}`);
+        appConfigs.sentry.logIdentifier = gameName.toLowerCase();
 
         const app = new Core.BaseGameApp(gameName, appConfigs);
         await app.run();
