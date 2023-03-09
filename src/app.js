@@ -1,12 +1,13 @@
+import trace from "./trace";
 import { gameConfigs as gameConfigsRepository } from "sc-base-database";
 import { logger } from "sc-common";
-import { Core } from "sc-game-base";
 import { SlotGameData, SlotGameDefinition, SlotGameApp } from "sc-slot-game-base";
 import appConfigs from "./app-configs";
 import gameSettings from "./game-settings";
 import SlotGameContainerRegistry from "./slot-game-container-registry";
 
 const run = async () => {
+    await trace.start();
     const appName = process.env.APP_NAME;
 
     if (appName) {
