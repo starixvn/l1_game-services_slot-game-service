@@ -7820,28 +7820,10 @@ sc-base-apis@1.18.1:
     sc-base-database "1.11.1"
     sc-common "1.8.1"
 
-sc-base-apis@1.18.1-beta.2:
-  version "1.18.1-beta.2"
-  resolved "http://npm.lumigame.com/sc-base-apis/-/sc-base-apis-1.18.1-beta.2.tgz#a3abb05ea4ef21df29b12ab641e0fc0860789e0d"
-  integrity sha512-RCB5hVXkY/QVSfGw2M25YIYovsZyBHXqee9GLDsvc+Pdyjpgq7bKKxOp/d8J9pONuuYxbFiaNKpuCzQDExVkmw==
-  dependencies:
-    moment "^2.29.4"
-    sc-api-client "1.4.0"
-    sc-base-database "1.11.3-beta.0"
-    sc-common "1.8.1"
-
 sc-base-database@1.11.1:
   version "1.11.1"
   resolved "http://npm.lumigame.com/sc-base-database/-/sc-base-database-1.11.1.tgz#25d850e83b4e07f7e6e26f3d2d1eecc11145c2cf"
   integrity sha512-DxuFRNDDSHQglSGFsXnrcDXVs+BRxSiILBNRbJ5RistCcSbs+k7QiwYMGhCSv3FOz9J/On9jh2y3MNst/he2BA==
-  dependencies:
-    mongoose "^5.9.25"
-    sc-common "1.8.1"
-
-sc-base-database@1.11.3-beta.0:
-  version "1.11.3-beta.0"
-  resolved "http://npm.lumigame.com/sc-base-database/-/sc-base-database-1.11.3-beta.0.tgz#184888339d388abd5fe05d90fb383e6122c6c406"
-  integrity sha512-TNSBLm/TQ2wdmtr6+91q4kgacnL7Mc5xIW0daHMLBlj9MWNEStOYDoj1XKSy7xFNumhucfD1NaoZyNaqwi5ZnA==
   dependencies:
     mongoose "^5.9.25"
     sc-common "1.8.1"
@@ -7857,30 +7839,7 @@ sc-common@1.8.1:
     mongoose-long "^0.3.0"
     numeral "^2.0.6"
 
-sc-game-base@3.2.6-beta.2:
-  version "3.2.6-beta.2"
-  resolved "http://npm.lumigame.com/sc-game-base/-/sc-game-base-3.2.6-beta.2.tgz#74f83a8db86cdfdbf875bf7444f21653990bfbc5"
-  integrity sha512-ruFs9EoETpYEDH0CefIEfnF6aMPVCVJzd6c6NT4osQlTBcatMiakqA9gnnduCVZ4UhFoK/jEuzaMv4fx5S8miQ==
-  dependencies:
-    awilix "^8.0.0"
-    axios "^1.0.0"
-    chance "^1.1.7"
-    cors "^2.8.5"
-    cron "^2.0.0"
-    express "^4.17.1"
-    helmet "^6.0.0"
-    lodash "^4.17.19"
-    mongoose "^5.9.25"
-    morgan "^1.10.0"
-    openid-client "^5.0.0"
-    sc-base-apis "1.18.1-beta.2"
-    sc-base-database "1.11.3-beta.0"
-    sc-common "1.8.1"
-    socket.io "^4.5.4"
-    socket.io-msgpack-parser "^3.0.1"
-    socket.io-prom-metrics "^1.0.3"
-
-sc-game-base@3.2.6-beta.3:
+sc-game-base@3.2.6-beta.2, sc-game-base@3.2.6-beta.3:
   version "3.2.6-beta.3"
   resolved "http://npm.lumigame.com/sc-game-base/-/sc-game-base-3.2.6-beta.3.tgz#35cf70bdee385ea3a975bb21883c0ed979099178"
   integrity sha512-CLuFZrENjlvWy1EQEML1YCV+zGPsz1jKfjHEa92YU8THzuIqZnfuyrrcf9WFLA5uwHfU6YBpO+msfaSqKx8yIA==
