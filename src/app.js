@@ -4,6 +4,7 @@ import { gameConfigs as gameConfigsRepository } from "sc-base-database";
 import appConfigs from "./app-configs";
 import gameSettings from "./game-settings";
 import SlotGameContainerRegistry from "./slot-game-container-registry";
+import { logger } from "sc-common";
 
 const run = async () => {
     const appName = process.env.APP_NAME;
@@ -28,6 +29,8 @@ const run = async () => {
             const container = new SlotGameContainerRegistry().register(appConfigs, definition, gameData);
 
             await app.startGame(container);
+        }else{
+            logger.logCritical(`${gameName} config doesn't exist`);
         }
     } else {
         console.log("App Name is not defined, failed to boostrap the service");
