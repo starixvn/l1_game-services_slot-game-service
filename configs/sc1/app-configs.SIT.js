@@ -47,13 +47,6 @@ export default {
         url: "http://l1_user_service_sit:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    enableCorsWs: true,
-    corsUrls: [
-        "http://l1sit.sgamesuat.com",
-        "https://l1sit.sgamesuat.com",
-        "http://l1sitadm.sgamesuat.com",
-        "https://l1sitadm.sgamesuat.com",
-    ],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
     metrics: {

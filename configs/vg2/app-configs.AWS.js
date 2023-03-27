@@ -54,8 +54,6 @@ export default {
         audiences: ["api", "admin-api"],
     },
     adminSecretKey: "asWDEer4yGdgsdqR4uqmKQZgh",
-    enableCorsWs: true,
-    orsUrls: ["https://sc2-games.sportsfun.app", "https://sc2-adm.sportsfun.app"],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
 };

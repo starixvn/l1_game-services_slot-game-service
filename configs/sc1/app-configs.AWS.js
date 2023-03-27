@@ -48,8 +48,6 @@ export default {
         url: "http://localhost:8004/api",
     },
     adminSecretKey: "asWDEer4yGdgsdqR4uqmKQZgh",
-    enableCorsWs: true,
-    corsUrls: ["https://sc1-games.sportsfun.app", "https://sc1-adm.sportsfun.app"],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
 };

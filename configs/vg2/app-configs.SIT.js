@@ -50,15 +50,6 @@ export default {
         url: "http://l2_user_service_sit:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    enableCorsWs: true,
-    corsUrls: [
-        "http://l2sit.sgamesuat.com",
-        "https://l2sit.sgamesuat.com",
-        "http://l2sitadm.sgamesuat.com",
-        "https://l2sitadm.sgamesuat.com",
-        "http://l2sitm.sgamesuat.com",
-        "https://l2sitm.sgamesuat.com",
-    ],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
     metrics: {
