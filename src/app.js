@@ -1,10 +1,10 @@
+import { gameConfigs as gameConfigsRepository } from "sc-base-database";
+import { logger } from "sc-common";
 import { Core } from "sc-game-base";
 import { SlotGameData, SlotGameDefinition } from "sc-slot-game-base";
-import { gameConfigs as gameConfigsRepository } from "sc-base-database";
 import appConfigs from "./app-configs";
 import gameSettings from "./game-settings";
 import SlotGameContainerRegistry from "./slot-game-container-registry";
-import { logger } from "sc-common";
 
 const run = async () => {
     const appName = process.env.APP_NAME;
