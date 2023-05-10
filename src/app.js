@@ -11,8 +11,8 @@ const run = async () => {
     const appName = process.env.APP_NAME;
 
     if (appConfigs.otel?.enabled) {
+        const trace = initTrace(appName, appConfigs.sentry.env, appConfigs.otel.endpoint);
         await trace.start();
-        initTrace(appName, appConfigs.sentry.env, appConfigs.otel.endpoint);
     }
 
     if (appName) {
