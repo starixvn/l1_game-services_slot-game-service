@@ -9,11 +9,12 @@ import { Resource } from "@opentelemetry/resources";
 import { SemanticResourceAttributes } from "@opentelemetry/semantic-conventions";
 import { HttpInstrumentation } from "@opentelemetry/instrumentation-http";
 import { CompositePropagator } from "@opentelemetry/core";
+import { ExpressInstrumentation } from "@opentelemetry/instrumentation-express";
 
 const trace = new NodeSDK({
     resource: new Resource({
         [SemanticResourceAttributes.SERVICE_NAME]: process.env.APP_NAME,
-        [SemanticResourceAttributes.DEPLOYMENT_ENVIRONMENT]: process.env.ENV,
+        [SemanticResourceAttributes.DEPLOYMENT_ENVIRONMENT]: appConfigs.sentry.env,
     }),
     spanProcessor: new BatchSpanProcessor(
         new JaegerExporter({
@@ -30,6 +31,7 @@ const trace = new NodeSDK({
                 return req.method === "GET" || req.statusCode === 204;
             },
         }),
+        new ExpressInstrumentation(),
         new MongooseInstrumentation(),
         new SocketIoInstrumentation(),
     ],
