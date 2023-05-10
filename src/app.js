@@ -1,4 +1,5 @@
-import trace from "./trace";
+// import trace from "./trace";
+import { initTrace } from "sc-instrument";
 import { gameConfigs as gameConfigsRepository } from "sc-base-database";
 import { logger } from "sc-common";
 import { SlotGameData, SlotGameDefinition, SlotGameApp } from "sc-slot-game-base";
@@ -7,11 +8,12 @@ import gameSettings from "./game-settings";
 import SlotGameContainerRegistry from "./slot-game-container-registry";
 
 const run = async () => {
+    const appName = process.env.APP_NAME;
+
     if (appConfigs.otel?.enabled) {
         await trace.start();
+        initTrace(appName, appConfigs.sentry.env, appConfigs.otel.endpoint);
     }
-
-    const appName = process.env.APP_NAME;
 
     if (appName) {
         const gameName = appName.replace("service", "").replaceAll("_", "");
