@@ -7,7 +7,10 @@ import gameSettings from "./game-settings";
 import SlotGameContainerRegistry from "./slot-game-container-registry";
 
 const run = async () => {
-    await trace.start();
+    if (appConfigs.otel?.enabled) {
+        await trace.start();
+    }
+
     const appName = process.env.APP_NAME;
 
     if (appName) {
@@ -30,7 +33,7 @@ const run = async () => {
             const container = new SlotGameContainerRegistry().register(appConfigs, definition, gameData);
 
             await app.startGame(container);
-        }else{
+        } else {
             logger.logCritical(`${gameName} config doesn't exist`);
         }
     } else {

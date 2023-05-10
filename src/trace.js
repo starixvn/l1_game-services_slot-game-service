@@ -1,3 +1,4 @@
+import appConfigs from "./app-configs";
 import { NodeSDK } from "@opentelemetry/sdk-node";
 import { BatchSpanProcessor } from "@opentelemetry/sdk-trace-base";
 import { JaegerExporter } from "@opentelemetry/exporter-jaeger";
@@ -12,12 +13,12 @@ import { CompositePropagator } from "@opentelemetry/core";
 const trace = new NodeSDK({
     resource: new Resource({
         [SemanticResourceAttributes.SERVICE_NAME]: process.env.APP_NAME,
-        [SemanticResourceAttributes.DEPLOYMENT_ENVIRONMENT]: "LOCAL_1",
+        [SemanticResourceAttributes.DEPLOYMENT_ENVIRONMENT]: process.env.ENV,
     }),
     spanProcessor: new BatchSpanProcessor(
         new JaegerExporter({
             tags: [],
-            endpoint: "http://10.10.50.69:14268/api/traces",
+            endpoint: appConfigs.otel?.endpoint,
         })
     ),
     textMapPropagator: new CompositePropagator({
@@ -25,8 +26,8 @@ const trace = new NodeSDK({
     }),
     instrumentations: [
         new HttpInstrumentation({
-            ignoreOutgoingRequestHook: (req) => {
-                return req.hostname.includes("health");
+            ignoreIncomingRequestHook: (req) => {
+                return req.method === "GET" || req.statusCode === 204;
             },
         }),
         new MongooseInstrumentation(),
