@@ -8,7 +8,8 @@ import { SocketIoInstrumentation } from "opentelemetry-instrumentation-socket.io
 import { Resource } from "@opentelemetry/resources";
 import { SemanticResourceAttributes } from "@opentelemetry/semantic-conventions";
 import { HttpInstrumentation } from "@opentelemetry/instrumentation-http";
-import { CompositePropagator } from "@opentelemetry/core";
+import { CompositePropagator, W3CTraceContextPropagator, W3CBaggagePropagator } from "@opentelemetry/core";
+import { B3InjectEncoding, B3Propagator } from "@opentelemetry/propagator-b3";
 import { ExpressInstrumentation } from "@opentelemetry/instrumentation-express";
 
 const trace = new NodeSDK({
@@ -23,7 +24,14 @@ const trace = new NodeSDK({
         })
     ),
     textMapPropagator: new CompositePropagator({
-        propagators: [new JaegerPropagator()],
+        propagators: [
+            new JaegerPropagator(),
+            new W3CTraceContextPropagator(),
+            new W3CBaggagePropagator(),
+            new B3Propagator({
+                injectEncoding: B3InjectEncoding.MULTI_HEADER,
+            }),
+        ],
     }),
     instrumentations: [
         new HttpInstrumentation({
