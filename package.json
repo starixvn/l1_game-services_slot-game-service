@@ -22,7 +22,7 @@
     "type": "module",
     "dependencies": {
         "sc-slot-game-base": "1.7.0"
-        "opentelemetry-instrumentation-mongoose": "0.28.0",
+        
         "opentelemetry-instrumentation-socket.io": "0.28.0",
         "@opentelemetry/instrumentation-express": "0.29.0"
     },

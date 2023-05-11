@@ -1,6 +1,5 @@
 import appConfigs from "./app-configs";
-import { initTrace } from "sc-instrument";
-const trace = initTrace(process.env.APP_NAME, appConfigs.sentry.env, appConfigs.otel.endpoint);
+import { Trace } from "sc-instrument";
 
 import { gameConfigs as gameConfigsRepository } from "sc-base-database";
 import { logger } from "sc-common";
@@ -13,7 +12,9 @@ const run = async () => {
     const gameName = appName ? appName.replace("service", "").replaceAll("_", "") : "";
 
     if (appConfigs.otel?.enabled) {
-        await trace.start();
+        Trace.initSpanProcessor(appConfigs.otel.endpoint);
+        Trace.addIdentifiers(process.env.APP_NAME, appConfigs.sentry.env);
+        await Trace.default.start();
     }
 
     if (appName) {
