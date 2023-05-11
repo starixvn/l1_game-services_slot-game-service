@@ -13,7 +13,7 @@ const run = async () => {
 
     if (appConfigs.otel?.enabled) {
         Trace.initSpanProcessor(appConfigs.otel.endpoint);
-        Trace.addIdentifiers(process.env.APP_NAME, appConfigs.sentry.env);
+        Trace.addIdentifiers(appName, appConfigs.sentry.env);
         await Trace.default.start();
     }
 
@@ -42,5 +42,10 @@ const run = async () => {
         console.log("App Name is not defined, failed to boostrap the service");
     }
 };
+
+process.on("exit", async (code) => {
+    console.log(`About to exit with code: ${code}`);
+    await Trace.default.shutdown();
+});
 
 run();
