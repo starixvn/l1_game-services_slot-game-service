@@ -36,7 +36,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://acb36eb835d948d68c1aad9873754d51@sentry.lumigame.com/27",
+        sentryUrl: "https://c359ef6bf2244e868ff63fbc93e54d1b@sentry.lumigame.com/27",
         logIdentifier: "fourguardians",
         env: "LOCAL_2",
     },
