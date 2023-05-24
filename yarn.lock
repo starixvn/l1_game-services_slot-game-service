@@ -5657,10 +5657,10 @@ sc-game-service-integration-utils@1.3.6:
     sc-game-base "4.0.0"
     socket.io-client "^4.4.0"
 
-sc-slot-game-base@1.6.2-beta.12:
-  version "1.6.2-beta.12"
-  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.6.2-beta.12.tgz#c3401acaa900cbec401ab0b480baade3c1107a34"
-  integrity sha512-dQ7+jGv+UvFHZjFN91mx6/M8sxW5ygG2ZH2AE4s75rM0zHFV4UhEJucfaXmljjWTc6DFYQqueg+th5jfKcaOOQ==
+sc-slot-game-base@1.6.2-beta.13:
+  version "1.6.2-beta.13"
+  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.6.2-beta.13.tgz#9c845044fc64c357c5c2b34c7dbe072f898d3bf3"
+  integrity sha512-8EDtjt6RxTuvlIQaLYNIdQckPpsvIjswq4xjTX6iYFn9djy1Bdu6Y6mbICDxadOEB9xu3bElcsv3E4Ziyv1PFw==
   dependencies:
     chance "^1.1.9"
     lodash "^4.17.21"
