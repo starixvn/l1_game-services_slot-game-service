@@ -50,9 +50,6 @@ export default {
         logIdentifier: "fourguardians",
         env: "AWS",
     },
-    authenticateSettings: {
-        audiences: ["api", "admin-api"],
-    },
     adminSecretKey: "asWDEer4yGdgsdqR4uqmKQZgh",
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,

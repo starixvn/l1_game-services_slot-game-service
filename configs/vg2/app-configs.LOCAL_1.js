@@ -51,9 +51,6 @@ export default {
         logIdentifier: "fourguardians",
         env: "LOCAL_1",
     },
-    authenticateSettings: {
-        audiences: ["api", "admin-api"],
-    },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
