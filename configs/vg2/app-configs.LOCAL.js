@@ -45,7 +45,7 @@ export default {
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
         useAuthenticate: true,
-        audiences: ["api", "admin-api"],
+        audiences: ["api", "admin-api", "autobot"],
     },
     userServiceSettings: {
         url: "http://l2_user_service_local:5000",
