@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
-import { CurrencyGroupGames } from "sc-game-base/src/core/models";
 import { users } from "sc-base-database";
 import { middlewares } from "sc-common";
+import { CurrencyGroupGames } from "sc-game-base/src/core/models";
 import {
     createDummyCurrency,
     createDummyUsers,
@@ -53,7 +53,7 @@ const getUserId = async (playerId) => {
 const createRounds = async () => {
     const userId = await getUserId(normalUser.playerId);
 
-    const data = rounds({ uid: userId, name: normalUser.playerName });
+    const data = rounds({ uid: userId, name: normalUser.playerName, playerId: normalUser.playerId });
 
     return Rounds("classicslot").insertMany(data);
 };

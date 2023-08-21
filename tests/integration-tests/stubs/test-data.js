@@ -115,6 +115,23 @@ const gameConfig = {
             playerContributionRatio: 0,
             botContributionRatio: 0,
         },
+        symbolWeight: {
+            1: [
+                [55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 4],
+                [1, 1, 1, 2, 2, 2, 2, 1, 1, 0, 0],
+                [1, 1, 2, 0, 1, 0, 0, 0, 0, 0, 0],
+            ],
+            2: [
+                [55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5],
+                [1, 1, 1, 2, 0, 0, 0, 1, 1, 0, 1],
+                [1, 1, 2, 0, 1, 0, 0, 0, 0, 0, 0],
+            ],
+            3: [
+                [55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5],
+                [1, 1, 1, 2, 0, 0, 0, 1, 1, 0, 0],
+                [3, 1, 0, 0, 1, 0, 0, 0, 0, 0, 2],
+            ],
+        },
     },
 };
 
@@ -215,4 +232,5 @@ const rounds = (user) => [
     },
 ];
 
-export { game, currencyData, socketOptions, gameConfig, rounds };
+export { currencyData, game, gameConfig, rounds, socketOptions };
+
