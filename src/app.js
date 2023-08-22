@@ -12,8 +12,9 @@ const run = async () => {
     const gameName = appName ? appName.replace("service", "").replaceAll("_", "") : "";
 
     if (appConfigs.otel?.enabled) {
-        Trace.initSpanProcessor(appConfigs.otel.endpoint);
-        Trace.addIdentifiers(appName, appConfigs.sentry.env);
+        const { otel } = appConfigs;
+        Trace.initSpanProcessor(otel.endpoint);
+        Trace.addIdentifiers(`${otel.system} - ${appName}`, appConfigs.sentry.env);
         await Trace.default.start();
     }
 
