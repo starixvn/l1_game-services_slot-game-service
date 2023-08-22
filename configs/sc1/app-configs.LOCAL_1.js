@@ -58,6 +58,6 @@ export default {
     enableMsgpackParser: false,
     otel: {
         enabled: true,
-        endpoint: "http://10.10.50.69:14268/api/traces",
+        endpoint: "http://10.10.50.69:4318/v1/traces",
     },
 };
