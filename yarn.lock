@@ -1455,15 +1455,6 @@
     "@opentelemetry/semantic-conventions" "1.15.2"
     semver "^7.5.1"
 
-"@opentelemetry/instrumentation-mongodb@0.36.1":
-  version "0.36.1"
-  resolved "http://npm.lumigame.com/@opentelemetry/instrumentation-mongodb/-/instrumentation-mongodb-0.36.1.tgz#a92e48f2cb4e2e2de430d900c96e21911709e137"
-  integrity sha512-//FdYXGcUO08Y1tVPXlcEvUYCnRU8tlBgYBe3ZMjF7E1GMaFti4Xy6sAHVreyl0ZQjBTaGtHdyORHIOTKUM4ZA==
-  dependencies:
-    "@opentelemetry/instrumentation" "^0.41.2"
-    "@opentelemetry/sdk-metrics" "^1.9.1"
-    "@opentelemetry/semantic-conventions" "^1.0.0"
-
 "@opentelemetry/instrumentation-mongoose@0.33.0":
   version "0.33.0"
   resolved "http://npm.lumigame.com/@opentelemetry/instrumentation-mongoose/-/instrumentation-mongoose-0.33.0.tgz#8063740274120105f559bcf663125d3f7cc00cb4"
@@ -1474,7 +1465,7 @@
     "@opentelemetry/semantic-conventions" "^1.0.0"
     tslib "^2.3.1"
 
-"@opentelemetry/instrumentation@0.41.2", "@opentelemetry/instrumentation@^0.41.0", "@opentelemetry/instrumentation@^0.41.2":
+"@opentelemetry/instrumentation@0.41.2", "@opentelemetry/instrumentation@^0.41.0":
   version "0.41.2"
   resolved "http://npm.lumigame.com/@opentelemetry/instrumentation/-/instrumentation-0.41.2.tgz#cae11fa64485dcf03dae331f35b315b64bc6189f"
   integrity sha512-rxU72E0pKNH6ae2w5+xgVYZLzc5mlxAbGzF4shxMVK8YC2QQsfN38B2GPbj0jvrKWWNUElfclQ+YTykkNg/grw==
@@ -1562,7 +1553,7 @@
     "@opentelemetry/core" "1.15.2"
     "@opentelemetry/resources" "1.15.2"
 
-"@opentelemetry/sdk-metrics@1.15.2", "@opentelemetry/sdk-metrics@^1.9.1":
+"@opentelemetry/sdk-metrics@1.15.2":
   version "1.15.2"
   resolved "http://npm.lumigame.com/@opentelemetry/sdk-metrics/-/sdk-metrics-1.15.2.tgz#eadd0a049de9cd860e1e0d49eea01156469c4b60"
   integrity sha512-9aIlcX8GnhcsAHW/Wl8bzk4ZnWTpNlLtud+fxUfBtFATu6OZ6TrGrF4JkT9EVrnoxwtPIDtjHdEsSjOqisY/iA==
@@ -6237,16 +6228,15 @@ sc-instrument-helper@^0.0.1-beta.1:
     socket.io "^4.1.2"
     socket.io-msgpack-parser "^3.0.1"
 
-sc-instrument@^0.0.1-beta.11:
-  version "0.0.1-beta.11"
-  resolved "http://npm.lumigame.com/sc-instrument/-/sc-instrument-0.0.1-beta.11.tgz#25389067d6cff4c9db4a87ba14d976c5e4c696fe"
-  integrity sha512-QnWfajqUWZaaumzKcJFWItuMEb7E0PeFdI+i91+T/RlGRrFn9CXx+PfzFcJweQIwauSgZ7r9pGn9mGZVMdm0Qg==
+sc-instrument@^0.0.1-beta.13:
+  version "0.0.1-beta.13"
+  resolved "http://npm.lumigame.com/sc-instrument/-/sc-instrument-0.0.1-beta.13.tgz#8020a3a3172449ed922f8ad4dd51d36005f38149"
+  integrity sha512-wnqEwB4oCo1RYCXUnw+Gco/CfOgT4Se6kED8BUN58jwH97uEO1kNkPPe+jGtwD8XV6mUINtHfSFQH5xh0EWRww==
   dependencies:
     "@opentelemetry/context-async-hooks" "1.15.2"
     "@opentelemetry/core" "1.15.2"
     "@opentelemetry/exporter-trace-otlp-proto" "0.41.2"
     "@opentelemetry/instrumentation-http" "0.41.2"
-    "@opentelemetry/instrumentation-mongodb" "0.36.1"
     "@opentelemetry/instrumentation-mongoose" "0.33.0"
     "@opentelemetry/propagator-b3" "1.15.2"
     "@opentelemetry/propagator-jaeger" "1.15.2"
@@ -6257,15 +6247,15 @@ sc-instrument@^0.0.1-beta.11:
     opentelemetry-instrumentation-socket.io "0.34.0"
     socket.io "4.6.1"
 
-sc-slot-game-base@1.7.1-beta.0:
-  version "1.7.1-beta.0"
-  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.7.1-beta.0.tgz#9fb876d544397e22a0be136ef414147cd6afc087"
-  integrity sha512-R1GoWi0d3D8phMTYSDA4Kp+rvmwe5o157vLyXwYoN8X47yNpdi0NtSDOxbUIShg5C7wMvS687wzKGsreZILjvQ==
+sc-slot-game-base@1.7.1-beta.1:
+  version "1.7.1-beta.1"
+  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.7.1-beta.1.tgz#e0eab8a4667337ff0d076c8a9fe69919be187905"
+  integrity sha512-F5zqRkjyF3ajblm/5Xm3pfI9NMc6JM2hKt1xZP2/EGYi/QKpMKhuJhaen76y/r+ctMKAe0v2VVuYGARv+9r5RA==
   dependencies:
     chance "^1.1.9"
     lodash "^4.17.21"
     sc-game-base "4.0.0"
-    sc-instrument "^0.0.1-beta.11"
+    sc-instrument "^0.0.1-beta.13"
     sc-instrument-helper "^0.0.1-beta.1"
 
 semver-compare@^1.0.0:
