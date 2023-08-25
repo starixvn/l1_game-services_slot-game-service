@@ -16,7 +16,7 @@ const run = async () => {
         const { otel } = appConfigs;
         Trace.initSpanProcessor(otel.endpoint);
         Trace.addIdentifiers(`${otel.system} - ${appName}`, appConfigs.sentry.env);
-        await Trace.default.start();
+        Trace.default.start();
     }
 
     if (appName) {

@@ -54,4 +54,9 @@ export default {
     },
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
+    otel: {
+        system: "SG",
+        enabled: true,
+        endpoint: "http://10.10.50.69:4318/v1/traces",
+    },
 };

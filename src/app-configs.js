@@ -50,7 +50,8 @@ export default {
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
     otel: {
-        enabled: true,
+        system: "DEV",
+        enabled: false,
         endpoint: "http://10.10.50.69:14268/api/traces",
     },
 };
