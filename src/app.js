@@ -1,5 +1,5 @@
 import appConfigs from "./app-configs";
-import { Trace } from "sc-instrument";
+import { initializer, initSpanProcessor, addIdentifiers } from "sc-instrument";
 
 import { gameConfigs as gameConfigsRepository } from "sc-base-database";
 import { logger } from "sc-common";
@@ -14,9 +14,9 @@ const run = async () => {
 
     if (appConfigs.otel?.enabled) {
         const { otel } = appConfigs;
-        Trace.initSpanProcessor(otel.endpoint);
-        Trace.addIdentifiers(`${otel.system} - ${appName}`, appConfigs.sentry.env);
-        Trace.default.start();
+        initSpanProcessor(otel.endpoint, initializer);
+        addIdentifiers(`${otel.system} - ${appName}`, appConfigs.sentry.env, initializer);
+        initializer.start();
     }
 
     if (appName) {
@@ -47,7 +47,7 @@ const run = async () => {
 
 process.on("exit", async (code) => {
     console.log(`About to exit with code: ${code}`);
-    await Trace.default.shutdown();
+    await initializer.shutdown();
 });
 
 run();

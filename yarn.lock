@@ -6198,10 +6198,10 @@ sc-game-service-integration-utils@1.3.6:
     sc-game-base "4.0.0"
     socket.io-client "^4.4.0"
 
-sc-instrument@^0.0.1-beta.13:
-  version "0.0.1-beta.13"
-  resolved "http://npm.lumigame.com/sc-instrument/-/sc-instrument-0.0.1-beta.13.tgz#8020a3a3172449ed922f8ad4dd51d36005f38149"
-  integrity sha512-wnqEwB4oCo1RYCXUnw+Gco/CfOgT4Se6kED8BUN58jwH97uEO1kNkPPe+jGtwD8XV6mUINtHfSFQH5xh0EWRww==
+sc-instrument@0.0.1-beta.16:
+  version "0.0.1-beta.16"
+  resolved "http://npm.lumigame.com/sc-instrument/-/sc-instrument-0.0.1-beta.16.tgz#1261dfbc3a6e5019e438336299b370f9510990ff"
+  integrity sha512-HXbSXtxLR3ZJK56O8tYgIJDiJfGy484fXavwXmUz1mzMx4jVwFK2749pjOI7+E8zMl0yurGLcFNv1mV/pQMTQQ==
   dependencies:
     "@opentelemetry/context-async-hooks" "1.15.2"
     "@opentelemetry/core" "1.15.2"
@@ -6217,15 +6217,15 @@ sc-instrument@^0.0.1-beta.13:
     opentelemetry-instrumentation-socket.io "0.34.0"
     socket.io "4.6.1"
 
-sc-slot-game-base@1.7.1-beta.2:
-  version "1.7.1-beta.2"
-  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.7.1-beta.2.tgz#13c6958070fb99c26d1083659d2a576201102e54"
-  integrity sha512-TVKZ/ejo/5TlNIydM5eRt+l1itrA0Z2aOVKiPHBur/Ps5rCnMajNR5z3zzvJiM4B7360o9jz1YLwkluIo98ucg==
+sc-slot-game-base@1.7.1-beta.3:
+  version "1.7.1-beta.3"
+  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.7.1-beta.3.tgz#42b422bcc773be2c785b264f782ebc25a0afb717"
+  integrity sha512-9IqReGkcDAuzP2aTPAimiTy6Lbwdbhg6pdfbSVJBhLGM9DAUIsnvPNaaF0J2qtLxFYPnTt0G9y3ThxGXHFllMA==
   dependencies:
     chance "^1.1.9"
     lodash "^4.17.21"
     sc-game-base "4.0.0"
-    sc-instrument "^0.0.1-beta.13"
+    sc-instrument "0.0.1-beta.16"
 
 semver-compare@^1.0.0:
   version "1.0.0"
