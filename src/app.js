@@ -1,10 +1,10 @@
 import appConfigs from "./app-configs";
 import { initializer, initSpanProcessor, addIdentifiers } from "sc-instrument";
 
+import { Core } from "sc-game-base";
 import { gameConfigs as gameConfigsRepository } from "sc-base-database";
 import { logger } from "sc-common";
 import { SlotGameData, SlotGameDefinition } from "sc-slot-game-base";
-import { Core } from "sc-game-base";
 import gameSettings from "./game-settings";
 import SlotGameContainerRegistry from "./slot-game-container-registry";
 
