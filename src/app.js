@@ -1,6 +1,7 @@
 import appConfigs from "./app-configs";
 import { initializer, initSpanProcessor, addIdentifiers } from "sc-instrument";
 
+import { mongoose } from "sc-instrument-helper";
 import { Core } from "sc-game-base";
 import { gameConfigs as gameConfigsRepository } from "sc-base-database";
 import { logger } from "sc-common";
