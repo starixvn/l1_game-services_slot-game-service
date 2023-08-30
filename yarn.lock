@@ -6195,6 +6195,31 @@ sc-common@1.8.1:
     mongoose-long "^0.3.0"
     numeral "^2.0.6"
 
+sc-game-base@4.0.1-beta.3:
+  version "4.0.1-beta.3"
+  resolved "http://npm.lumigame.com/sc-game-base/-/sc-game-base-4.0.1-beta.3.tgz#84ddd00183f85e27c3f8ed334583725a0f469517"
+  integrity sha512-2Fjli+BZyKfWkdwwzyatRxWmTUHc1Ao1/eNG674Uws9JdfZSvD6Y1qDr5dKbT4zQh8fR047tWKOsSxJuqHMHEA==
+  dependencies:
+    awilix "^8.0.0"
+    axios "^1.0.0"
+    chance "^1.1.7"
+    cors "^2.8.5"
+    cron "^2.0.0"
+    express "^4.17.1"
+    helmet "^6.0.0"
+    lodash "^4.17.19"
+    mongoose "^5.9.25"
+    morgan "^1.10.0"
+    openid-client "^5.0.0"
+    sc-base-apis "1.18.1"
+    sc-base-database "1.11.1"
+    sc-common "1.8.1"
+    sc-instrument "0.0.1-beta.17"
+    sc-instrument-helper "^0.0.1-beta.1"
+    socket.io "^4.5.4"
+    socket.io-msgpack-parser "^3.0.1"
+    socket.io-prom-metrics "^1.0.3"
+
 sc-game-base@4.0.1-beta.4:
   version "4.0.1-beta.4"
   resolved "http://npm.lumigame.com/sc-game-base/-/sc-game-base-4.0.1-beta.4.tgz#e9de8d4f8540f9999cfd018d8d43a1a9f9cb715e"
@@ -6279,14 +6304,14 @@ sc-instrument@0.0.1-beta.18:
     opentelemetry-instrumentation-socket.io "0.34.0"
     socket.io "4.6.1"
 
-sc-slot-game-base@1.7.1-beta.8:
-  version "1.7.1-beta.8"
-  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.7.1-beta.8.tgz#fd530b32bddf708c2820d8671f0d95d0fb5bc41d"
-  integrity sha512-AzNeUU7ZHHLGUa7qDUxi4oH/pCzgi9Ln3f7nL6N4x3AdiV4hgk5VipYDgjXRbuAm0sqF3VWIua+P6M8xaBeBow==
+sc-slot-game-base@1.7.1-beta.7:
+  version "1.7.1-beta.7"
+  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.7.1-beta.7.tgz#9430304dad5bb09f5ac489cf0788d3534bd7bfac"
+  integrity sha512-qjad+Rt1NK66xSGiGzU0ha5Rq6QklWhc3t17bIaeguDKE81dlM2H6LTdtXzmf3HGc2jNIaX/QLhnNWgja0v9pg==
   dependencies:
     chance "^1.1.9"
     lodash "^4.17.21"
-    sc-game-base "4.0.1-beta.4"
+    sc-game-base "4.0.1-beta.3"
 
 semver-compare@^1.0.0:
   version "1.0.0"
