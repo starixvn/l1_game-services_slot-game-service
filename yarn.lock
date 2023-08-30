@@ -6259,6 +6259,26 @@ sc-instrument@0.0.1-beta.17:
     opentelemetry-instrumentation-socket.io "0.34.0"
     socket.io "4.6.1"
 
+sc-instrument@0.0.1-beta.18:
+  version "0.0.1-beta.18"
+  resolved "http://npm.lumigame.com/sc-instrument/-/sc-instrument-0.0.1-beta.18.tgz#c2cd44c4f5a63063e19319aaae58964271f66958"
+  integrity sha512-JfgD91peH4Erk/5BQxKHMH8ekdQItxdnvMPdtsKF8sYRVqCDDQCgm3W129USiwHljNhqrktf9p1qCDygioymcA==
+  dependencies:
+    "@opentelemetry/context-async-hooks" "1.15.2"
+    "@opentelemetry/core" "1.15.2"
+    "@opentelemetry/exporter-trace-otlp-proto" "0.41.2"
+    "@opentelemetry/instrumentation-http" "0.41.2"
+    "@opentelemetry/instrumentation-mongodb" "^0.36.1"
+    "@opentelemetry/instrumentation-mongoose" "0.33.0"
+    "@opentelemetry/propagator-b3" "1.15.2"
+    "@opentelemetry/propagator-jaeger" "1.15.2"
+    "@opentelemetry/resources" "1.15.2"
+    "@opentelemetry/sdk-node" "0.41.2"
+    "@opentelemetry/sdk-trace-base" "1.15.2"
+    "@opentelemetry/semantic-conventions" "1.15.2"
+    opentelemetry-instrumentation-socket.io "0.34.0"
+    socket.io "4.6.1"
+
 sc-slot-game-base@1.7.1-beta.8:
   version "1.7.1-beta.8"
   resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.7.1-beta.8.tgz#fd530b32bddf708c2820d8671f0d95d0fb5bc41d"

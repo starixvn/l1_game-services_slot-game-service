@@ -16,7 +16,7 @@ const run = async () => {
         const { otel } = appConfigs;
         initSpanProcessor(otel.endpoint, initializer);
         addIdentifiers(`${otel.system} - ${appName}`, appConfigs.sentry.env, initializer);
-        initializer.start();
+        await initializer.start();
     }
 
     if (appName) {
