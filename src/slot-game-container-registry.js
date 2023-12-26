@@ -1,6 +1,6 @@
 import awilix from "awilix";
 import * as Slot from "sc-slot-game-base";
-import { fames, freeSpins, rounds } from "./models";
+import { fames, freeSpins, rounds, jackpots } from "./models";
 
 const { asValue } = awilix;
 
@@ -14,6 +14,7 @@ export default class SlotGameContainerRegistry extends Slot.SlotContainerRegistr
             roundsRepository: asValue(rounds(definition.configName)),
             famesRepository: asValue(fames(definition.configName)),
             freeSpinsRepository: asValue(freeSpins(definition.configName)),
+            jackpotsRepository: asValue(jackpots),
         });
     }
 }
