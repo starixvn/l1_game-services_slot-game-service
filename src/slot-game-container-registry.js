@@ -1,6 +1,7 @@
 import awilix from "awilix";
 import * as Slot from "sc-slot-game-base";
-import { fames, freeSpins, rounds, jackpots } from "./models";
+import { fames, freeSpins, rounds } from "./models";
+import jackpots from "./models/jackpots";
 
 const { asValue } = awilix;
 
