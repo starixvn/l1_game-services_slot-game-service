@@ -7,7 +7,7 @@
         "integration-test": "jest tests/integration-tests/index.test.js --ci --reporters=default --reporters=jest-junit --forceExit",
         "test": "jest --testPathPattern=tests/unit-tests/",
         "test-coverage": "jest --testPathPattern=tests/unit-tests/ --collect-coverage",
-        "dev": "set APP_NAME=slot_servive && nodemon --es-module-specifier-resolution=node --watch ./src ./src/app.js",
+        "dev": "set APP_NAME=dragonball && nodemon --es-module-specifier-resolution=node --watch ./src ./src/app.js",
         "debug": "set APP_NAME=slot_servive && nodemon --es-module-specifier-resolution=node --watch ./ --inspect ./src/app.js",
         "prod": "node --max-old-space-size=8192 --es-module-specifier-resolution=node ./src/app.js",
         "reg": "npm set registry http://npm.lumigame.com"
@@ -21,7 +21,7 @@
     "license": "ISC",
     "type": "module",
     "dependencies": {
-        "sc-slot-game-base": "2.0.0"
+        "sc-slot-game-base": "3.0.0-beta.0"
     },
     "resolutions": {
         "sc-base-apis": "1.18.2"
