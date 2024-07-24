@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const jackpotSchema = new mongoose.Schema({
     gameId: { type: Number, required: true },
     gameName: { type: String, required: true },
-    pool: { type: Number, required: true },
+    pool: { type: Number },
     initAmount: { type: Number, required: true },
     amount: { type: Number, default: 0 },
     winningRatio: { type: Number },
