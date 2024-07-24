@@ -24,6 +24,7 @@ const jackpotSchema = new mongoose.Schema({
     exchangeRateId: { type: Number },
     operatorId: { type: String },
     currency: { type: String },
+    prize: { type: String },
 });
 
 mongoose.deleteModel("Jackpot");
