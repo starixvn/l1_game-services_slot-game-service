@@ -1,6 +1,6 @@
 import { GameClientDriver, normalUser } from "sc-game-service-integration-utils";
-import { socketOptions } from "./stubs/test-data";
 import { initUserSession } from "./helpers";
+import { socketOptions } from "./stubs/test-data";
 
 export const ingameTest = () => {
     describe("when user joins game", () => {
@@ -82,7 +82,7 @@ export const ingameTest = () => {
                     5: 5000,
                 },
             });
-            expect(gameConfigs.stakeLevels).toStrictEqual([0.1, 1, 5]);
+            expect(gameConfigs.betLevels).toStrictEqual([0.1, 1, 5]);
 
             normalUserClientDriver.close();
         });

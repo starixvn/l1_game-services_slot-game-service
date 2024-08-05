@@ -104,6 +104,7 @@ const gameConfig = {
                 5: 5000,
             },
         },
+        betLevels: [0.1, 0.2, 1, 1.25, 1.5, 2, 3, 5],
         bonus: {
             min: 8,
             max: 28,
@@ -114,6 +115,23 @@ const gameConfig = {
             winningRatio: 0,
             playerContributionRatio: 0,
             botContributionRatio: 0,
+            pools: {
+                minor: {
+                    init: 5000,
+                    playerSettings: { contrib: 0.1, alloc: 90 },
+                    botSettings: { contrib: 0.01, alloc: 80 },
+                },
+                major: {
+                    init: 25000,
+                    playerSettings: { contrib: 0.15, alloc: 9 },
+                    botSettings: { contrib: 0.015, alloc: 15 },
+                },
+                grand: {
+                    init: 50000,
+                    playerSettings: { contrib: 0.25, alloc: 1 },
+                    botSettings: { contrib: 0.025, alloc: 5 },
+                },
+            },
         },
         symbolWeight: {
             1: [
