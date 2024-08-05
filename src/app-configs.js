@@ -49,6 +49,7 @@ export default {
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
+    jackpotLiveSeconds: 63,
     otel: {
         system: "DEV",
         enabled: false,

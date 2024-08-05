@@ -13,6 +13,7 @@ const schema = new mongoose.Schema({
     coinValues: [Number],
     maxWinPerRound: Number,
     betLevels: [Object],
+    defaultBetLevel: { type: Number },
 });
 mongoose.deleteModel("currency_group_games");
 export default mongoose.model("currency_group_games", schema);
