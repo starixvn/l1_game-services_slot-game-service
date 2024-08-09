@@ -52,7 +52,7 @@ export default {
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     freeSpinLiveSeconds: 600, // 1 day
-    bonusLiveSeconds: 124,
+    bonusLiveSeconds: 125,
     jackpotLiveSeconds: 63,
     metrics: {
         enable: true,
