@@ -9,5 +9,6 @@ export default {
     freeSpinLiveSeconds: appConfigs.freeSpinLiveSeconds,
     bonusLiveSeconds: appConfigs.bonusLiveSeconds ?? 125,
     jackpotLiveSeconds: appConfigs.jackpotLiveSeconds ?? 65,
+    delaySecondsAfterJackpot: appConfigs.delaySecondsAfterJackpot ?? 3,
     applyNewBonusCalculation: true,
 };
