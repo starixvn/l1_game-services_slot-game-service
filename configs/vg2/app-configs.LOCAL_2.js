@@ -53,7 +53,7 @@ export default {
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     freeSpinLiveSeconds: 86400, // 1 day
-    bonusLiveSeconds: 123,
+    bonusLiveSeconds: 125,
     otel: {
         system: "VG",
         enabled: true,

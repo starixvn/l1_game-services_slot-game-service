@@ -49,7 +49,7 @@ export default {
     },
     adminSecretKey: "asWDEer4yGdgsdqR4uqmKQZgh",
     freeSpinLiveSeconds: 86400, // 1 day
-    bonusLiveSeconds: 123,
+    bonusLiveSeconds: 125,
     metrics: {
         enable: true,
         secretKey: "30d15293-c7de-4c77-9293-b85d6c5bfe1a",

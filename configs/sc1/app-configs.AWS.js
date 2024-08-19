@@ -49,5 +49,5 @@ export default {
     },
     adminSecretKey: "asWDEer4yGdgsdqR4uqmKQZgh",
     freeSpinLiveSeconds: 86400, // 1 day
-    bonusLiveSeconds: 123,
+    bonusLiveSeconds: 125,
 };
