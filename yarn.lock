@@ -6197,10 +6197,10 @@ sc-instrument@1.0.0:
     opentelemetry-instrumentation-socket.io "0.34.0"
     socket.io "4.6.1"
 
-sc-slot-game-base@3.0.0-beta.49:
-  version "3.0.0-beta.49"
-  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-3.0.0-beta.49.tgz#c949db86b6160e3a52fe7ed8d6268def6187a4a0"
-  integrity sha512-e58zdUVyf8oreI3SgGqfn+gA5AwSGQnXMRLmrDx8ZgZ7jecL2ORrpiSwd4MtHWTxrm9VdunrPf+mexwOWMvLzQ==
+sc-slot-game-base@3.0.0-beta.50:
+  version "3.0.0-beta.50"
+  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-3.0.0-beta.50.tgz#02824c189dc4007b972b0b0367212e0a411e530a"
+  integrity sha512-FacP6fsB7bREocQqb+z7xn2TOphBn/REcjPZdCSTz9AkyxndM34hbtHvwSJp1VN3U8weM7q0tl30YV0HGeBhUQ==
   dependencies:
     chance "^1.1.9"
     lodash "^4.17.21"
