@@ -2,8 +2,8 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l2_game_api_local_2:5000",
-        authUrl: "http://l2_auth_api_local_2:5000",
+        apiUrl: "http://l2-game-api-local2-service:5000",
+        authUrl: "http://l2-auth-api-local2-service:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
@@ -16,7 +16,7 @@ export default {
         enabledApiLogs: true,
     },
     authenticateSettings: {
-        url: "http://l2_auth_api_local_2:5000",
+        url: "http://l2-auth-api-local2-service:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -24,10 +24,10 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://l2_user_service_local_2:5000",
+        url: "http://l2-user-service-local2-service:5000",
     },
     notificationServiceSettings: {
-        url: "http://l2_notification_service_local_2:5000/api",
+        url: "http://l2-notification-service-local2-service:5000/api",
     },
     socketOptions: {
         pingInterval: 60 * 1000,
