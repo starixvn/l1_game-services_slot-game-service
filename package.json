@@ -21,7 +21,7 @@
     "license": "ISC",
     "type": "module",
     "dependencies": {
-        "sc-slot-game-base": "2.1.0"
+        "sc-slot-game-base": "2.1.1-beta.0"
     },
     "resolutions": {
         "sc-base-apis": "1.18.2",
