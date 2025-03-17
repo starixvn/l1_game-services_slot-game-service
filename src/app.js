@@ -1,9 +1,8 @@
 import appConfigs from "./app-configs";
-import { initializer, initSpanProcessor, addIdentifiers } from "sc-instrument";
 
-import { Core } from "sc-game-base";
 import { gameConfigs as gameConfigsRepository } from "sc-base-database";
 import { logger } from "sc-common";
+import { Core } from "sc-game-base";
 import { SlotGameData, SlotGameDefinition } from "sc-slot-game-base";
 import gameSettings from "./game-settings";
 import SlotGameContainerRegistry from "./slot-game-container-registry";
@@ -12,12 +11,7 @@ const run = async () => {
     const appName = process.env.APP_NAME;
     const gameName = appName ? appName.replace("service", "").replaceAll("_", "") : "";
 
-    if (appConfigs.otel?.enabled) {
-        const { otel } = appConfigs;
-        initSpanProcessor(otel.endpoint, initializer);
-        addIdentifiers(`${otel.system} - ${appName}`, appConfigs.sentry.env, initializer);
-        initializer.start();
-    }
+
 
     if (appName) {
         appConfigs.database.url = appConfigs.database.url.concat(`&appName=${gameName.toLowerCase()}`);
@@ -47,7 +41,6 @@ const run = async () => {
 
 process.on("exit", async (code) => {
     console.log(`About to exit with code: ${code}`);
-    await initializer.shutdown();
 });
 
 run();
