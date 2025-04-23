@@ -1,8 +1,8 @@
-import { GameClientDriver, normalUser, eventTypes } from "sc-game-service-integration-utils";
+import axios from "axios";
+import Chance from "chance";
+import { eventTypes, GameClientDriver, normalUser } from "sc-game-service-integration-utils";
 import { initUserSession } from "./helpers";
 import { socketOptions } from "./stubs/test-data";
-import Chance from "chance";
-import axios from "axios";
 
 const chance = new Chance();
 
@@ -38,10 +38,8 @@ export const settleTest = () => {
         describe("when win bonus", () => {
             let client;
 
-            beforeAll(async (done) => {
+            beforeAll(async () => {
                 client = await setupClientReadyBet();
-
-                done();
             });
 
             afterAll(() => {
@@ -82,10 +80,8 @@ export const settleTest = () => {
         describe("when win freeSpin", () => {
             let client;
 
-            beforeAll(async (done) => {
+            beforeAll(async () => {
                 client = await setupClientReadyBet();
-
-                done();
             });
 
             afterAll(() => {

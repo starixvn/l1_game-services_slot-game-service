@@ -1,3 +1,5 @@
+import { ingameTest } from "./in-game.test";
+import { settleTest } from "./settle.test";
 import { signinTest } from "./sign-in.test";
 import { startServiceProcess, startSetupDataProcess } from "./stubs/test-jobs";
 
@@ -22,6 +24,7 @@ afterAll(() => {
     processStartService.kill();
 });
 
+
 signinTest();
-// ingameTest();
-// settleTest();
+ingameTest();
+settleTest();

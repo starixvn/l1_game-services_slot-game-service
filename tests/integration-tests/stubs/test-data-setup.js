@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { users } from "sc-base-database";
+import { CurrencyGroupGames, users } from "sc-base-database";
 import { middlewares } from "sc-common";
 import {
     createDummyCurrency,
@@ -12,7 +12,6 @@ import {
 
 import appConfigs from "../../../src/app-configs.IGT";
 import { rounds as Rounds } from "../../../src/models";
-import currencyGroupGames from "../../../src/models/currency-group-games";
 import { currencyData, game, gameConfig, rounds } from "./test-data";
 
 const connectDatabase = async () => {
@@ -61,14 +60,18 @@ const createRounds = async () => {
 const createCurrencyGroupGames = async (currencyGroupId, gameId, gameConfig) => {
     const data = {
         enabled: true,
-        stakeLevels: [{ stake: 0.1 }, { stake: 1 }, { stake: 5 }],
+        stakeLevels: [],
         groupId: currencyGroupId,
         maxWinPerRound: 50000,
-        betLevels: [0.1, 1, 5],
+        betLevels: [0.1, 1, 5, 10],
         defaultBetLevel: 1,
+        gameId,
+        gameName: gameConfig.name,
+        minBet: 0,
+        maxBet: 0,
     };
-
-    return currencyGroupGames.create({ gameId, ...gameConfig, ...data });
+    
+    return CurrencyGroupGames.create(data);
 };
 
 createTestData();

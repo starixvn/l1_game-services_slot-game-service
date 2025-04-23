@@ -82,7 +82,7 @@ export const ingameTest = () => {
                     5: 5000,
                 },
             });
-            expect(gameConfigs.betLevels).toStrictEqual([0.1, 1, 5]);
+            expect(gameConfigs.betLevels).toStrictEqual([0.1, 1, 5, 10]);
 
             normalUserClientDriver.close();
         });
@@ -104,7 +104,7 @@ export const ingameTest = () => {
                 name: "NormalUser",
                 multiplier: 1,
                 rate: 1,
-                red: 25000,
+                red: 20000,
                 type: false,
             });
 
