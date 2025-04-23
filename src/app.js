@@ -1,9 +1,9 @@
+import { addIdentifiers, initializer, initSpanProcessor } from "sc-instrument";
 import appConfigs from "./app-configs";
-import { initializer, initSpanProcessor, addIdentifiers } from "sc-instrument";
 
-import { Core } from "sc-game-base";
-import { gameConfigs as gameConfigsRepository } from "sc-base-database";
 import { logger } from "sc-common";
+import { Core } from "sc-game-base";
+import GameManagementApiClientFactory, { getOrDefault } from "sc-game-base/src/core/game-management-api";
 import { SlotGameData, SlotGameDefinition } from "sc-slot-game-base";
 import gameSettings from "./game-settings";
 import SlotGameContainerRegistry from "./slot-game-container-registry";
@@ -26,7 +26,10 @@ const run = async () => {
         const app = new Core.BaseGameApp(gameName, appConfigs);
         await app.run();
 
-        const gameConfigs = await gameConfigsRepository.findOne({ name: gameName.toLowerCase() }).lean().exec();
+        const gameConfigs = await getOrDefault(
+            new GameManagementApiClientFactory(appConfigs).instance().gameConfigs.getGameConfigs(gameName),
+            null
+        );
 
         if (gameConfigs) {
             gameSettings.id = gameConfigs.gameId;

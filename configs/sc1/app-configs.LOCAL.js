@@ -59,4 +59,7 @@ export default {
         enabled: true,
         endpoint: "http://10.10.50.69:4318/v1/traces",
     },
+    gameManagementApiSettings: {
+        BASE: "http://l1-game-management-service-local-service:5000",
+    },
 };

@@ -55,4 +55,7 @@ export default {
         secretKey: "30d15293-c7de-4c77-9293-b85d6c5bfe1a",
     },
     enableMsgpackParser: true,
+    gameManagementApiSettings: {
+        BASE: "http://l1-game-management-service-prod-service:5000",
+    },
 };

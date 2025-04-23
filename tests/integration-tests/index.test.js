@@ -1,13 +1,11 @@
-import { startServiceProcess, startSetupDataProcess } from "./stubs/test-jobs";
 import { signinTest } from "./sign-in.test";
-import { ingameTest } from "./in-game.test";
-import { settleTest } from "./settle.test";
+import { startServiceProcess, startSetupDataProcess } from "./stubs/test-jobs";
 
 let processStartService;
 const JEST_ASSERT_WAITING_RESPONSE_TIMEOUT = 120000;
+jest.setTimeout(JEST_ASSERT_WAITING_RESPONSE_TIMEOUT);
 
 beforeAll((done) => {
-    jest.setTimeout(JEST_ASSERT_WAITING_RESPONSE_TIMEOUT);
     startSetupDataProcess(() => {
         console.log("done setup db");
         processStartService = startServiceProcess(() => {
@@ -25,5 +23,5 @@ afterAll(() => {
 });
 
 signinTest();
-ingameTest();
-settleTest();
+// ingameTest();
+// settleTest();

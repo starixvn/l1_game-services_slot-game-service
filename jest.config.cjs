@@ -6,11 +6,11 @@ module.exports = async () => {
             "^.+\\.js?$": "babel-jest",
         },
         transformIgnorePatterns: [
-            "node_modules/(?!(sc-base-database|sc-common|sc-game-base|sc-base-apis|sc-api-client|sc-slot-game-base|sc-game-service-integration-utils|axios)/)",
+            "node_modules/(?!(sc-base-database|sc-common|sc-game-base|sc-base-apis|sc-api-client|sc-slot-game-base|sc-game-service-integration-utils|axios|nanoid|crypto-random-string|sc-game-management-client)/)",
         ],
         testEnvironment: "node",
         testResultsProcessor: "jest-sonar-reporter",
-        setupFilesAfterEnv: ["jest-extended"],
+        setupFilesAfterEnv: ["jest-extended/all"],
         reporters: [
             "default",
             ["jest-junit", { outputDirectory: "coverage" }],

@@ -1,4 +1,4 @@
-import * as Slot from "sc-slot-game-base";
+import { SlotContainerRegistry } from "sc-slot-game-base";
 import SlotGameContainerRegistry from "../../src/slot-game-container-registry";
 
 jest.mock(
@@ -19,6 +19,6 @@ describe("extends", () => {
         //Arrange
         const registry = new SlotGameContainerRegistry();
         // Assert
-        expect(registry instanceof Slot.SlotContainerRegistry);
+        expect(registry instanceof SlotContainerRegistry);
     });
 });

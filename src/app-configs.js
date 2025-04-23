@@ -8,7 +8,7 @@ export default {
             id: "game-server",
             secret: "gameserver@20luminet&",
         },
-        useAuthenticate: false,
+        useAuthenticate: true,
         requestTimeout: 10000,
         placeBetTimeout: 4000,
         hitJackpotTimeout: 200000,
@@ -24,7 +24,7 @@ export default {
     database: {
         url: "mongodb://127.0.0.1:27017",
         options: {
-            dbName: "minigame2",
+            dbName: "minigame",
             useNewUrlParser: true,
             useUnifiedTopology: true,
             auto_reconnect: true,
@@ -40,7 +40,7 @@ export default {
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
-        useAuthenticate: false,
+        useAuthenticate: true,
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
@@ -54,5 +54,8 @@ export default {
         system: "DEV",
         enabled: false,
         endpoint: "http://10.10.50.69:14268/api/traces",
+    },
+    gameManagementApiSettings: {
+        BASE: "https://l1-proxy.lumigame.com/game-management-service",
     },
 };
