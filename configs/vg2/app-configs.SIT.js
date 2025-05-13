@@ -50,7 +50,7 @@ export default {
         url: "http://l2-user-service-sit-service:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    freeSpinLiveSeconds: 86400, // 1 day
+    freeSpinLiveSeconds: 300, // 1 day
     bonusLiveSeconds: 125,
     metrics: {
         enable: true,

@@ -51,7 +51,7 @@ export default {
         url: "http://l2-user-service-local-service:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    freeSpinLiveSeconds: 600, // 1 day
+    freeSpinLiveSeconds: 300, // 1 day
     bonusLiveSeconds: 125,
     jackpotLiveSeconds: 65,
     metrics: {
