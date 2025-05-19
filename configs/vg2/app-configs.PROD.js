@@ -59,6 +59,6 @@ export default {
     },
     enableMsgpackParser: true,
     gameManagementApiSettings: {
-        BASE: "http://l2-game-management-service-prod-service:5000",
+        BASE: "http://l2_game_management_service_prod:5000",
     },
 };
