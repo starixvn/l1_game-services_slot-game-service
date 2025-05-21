@@ -7122,10 +7122,10 @@ sc-game-base@5.4.0:
     socket.io-msgpack-parser "^3.0.1"
     socket.io-prom-metrics "^1.0.3"
 
-sc-game-management-client@0.1.3, sc-game-management-client@^0.1.0:
-  version "0.1.3"
-  resolved "https://npm.lumigame.com/sc-game-management-client/-/sc-game-management-client-0.1.3.tgz#55a17f6fb01af00c1b9922e221a5425a59f36941"
-  integrity sha512-VywFnGjsepOtYw+1KOITZ2GNib4dHvU0TBVgNbaBNfKu36jIvYzvQ2gnbsLzIJOl2VyFRHjn/Xm5qxOs/1wTUw==
+sc-game-management-client@0.1.4-beta.0, sc-game-management-client@^0.1.0:
+  version "0.1.4-beta.0"
+  resolved "http://npm.lumigame.com/sc-game-management-client/-/sc-game-management-client-0.1.4-beta.0.tgz#6f72c5d874c01706cf730dd0ceb0e71609023735"
+  integrity sha512-bE8QYpTaBGLBNzBGiSDiatyanBXd3SwVykiMcrn+CJ72GeFcPXo80924vuLekoo2dXOPA77yWpW2QUnqAd7NSA==
   dependencies:
     axios "1.6.2"
     axios-retry "^4.0.0"
@@ -7176,15 +7176,15 @@ sc-pf-client-seed@^1.0.5:
   dependencies:
     chance "^1.1.11"
 
-sc-slot-game-base@2.2.0:
-  version "2.2.0"
-  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-2.2.0.tgz#df9f6642957536c078a71b6fd10f3e8085604f67"
-  integrity sha512-Vw3whSDbNsTnmEFun0ndxdhcEWcICt3NWRKBPxP9Q+4CJPmTp/YVd1UARDoxhRxjn2Wk5Z4jI9qi5gSnzg3xjw==
+sc-slot-game-base@2.2.1-beta.2:
+  version "2.2.1-beta.2"
+  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-2.2.1-beta.2.tgz#4441ff0282b7b75de16f49de8d22778407355665"
+  integrity sha512-AaacN9n6vFg4JJhxGbA9ejm5R8Sjo+1FDyyiol38/Tlh6kWN5NkfzzaU4vZ6u5Vb7kzCZHN9mDPv7XC5uvpizQ==
   dependencies:
     chance "^1.1.9"
     lodash "^4.17.21"
     sc-game-base "5.4.0"
-    sc-game-management-client "0.1.3"
+    sc-game-management-client "0.1.4-beta.0"
 
 semver-compare@^1.0.0:
   version "1.0.0"
