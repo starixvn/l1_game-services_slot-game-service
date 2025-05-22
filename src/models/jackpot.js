@@ -1,8 +1,6 @@
 import mongoose from "mongoose";
 
 const jackpotSchema = new mongoose.Schema({
-    gameId: { type: Number, required: true },
-    gameName: { type: String, required: true },
     pool: { type: Number },
     prize: { type: String },
     initAmount: { type: Number, required: true },
