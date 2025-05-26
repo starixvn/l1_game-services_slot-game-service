@@ -70,14 +70,14 @@ export default {
         streams: {
             jackpotRunningPools: {
                 name: "vg_local_slots_jackpot_running_pools",
-                subjects: ["jackpot.>"],
+                subjects: ["jackpot-pools.>"],
                 max_age: 5000000000,
                 retention: "limits",
                 discard: "old",
             },
             jackpotWinners: {
                 name: "vg_local_slots_jackpot_winners",
-                subjects: ["jackpot.>"],
+                subjects: ["jackpot-winners.>"],
                 max_age: 0,
             },
         },
