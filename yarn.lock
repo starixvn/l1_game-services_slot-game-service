@@ -7176,10 +7176,10 @@ sc-pf-client-seed@^1.0.5:
   dependencies:
     chance "^1.1.11"
 
-sc-slot-game-base@2.2.1-beta.12:
-  version "2.2.1-beta.12"
-  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-2.2.1-beta.12.tgz#67691881cf787623f5aeaf68b87df01659a070e2"
-  integrity sha512-VKLXYpdKa5bkZOt/XeZf+zcAGsJJdTQl76TzC4bGOrVmO5hedceBdcPqhR03zlSBV+5lG4KzVBm0YUEfAEeddg==
+sc-slot-game-base@2.2.1-beta.15:
+  version "2.2.1-beta.15"
+  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-2.2.1-beta.15.tgz#1e967a7c51c47b9f55aedc403f1b42d1a16d3edc"
+  integrity sha512-pPzz59NLvP/7jKJL2osWJf6VpRIcHXr8+6re4WCRghffCLDFKVIWgruN07QT3+ozwnfzbdkR+V7Xx2t0IMepug==
   dependencies:
     chance "^1.1.9"
     lodash "^4.17.21"
