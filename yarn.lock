@@ -7226,10 +7226,10 @@ sc-pf-client-seed@^1.0.5:
   dependencies:
     chance "^1.1.11"
 
-sc-slot-game-base@2.2.1-beta.22:
-  version "2.2.1-beta.22"
-  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-2.2.1-beta.22.tgz#3ccb0fd2463cdfd586b4f82e669bd1ad76142ab5"
-  integrity sha512-9DRxfeJxCMjiCs6/Zkv1lkBUMeLlcdChfAqLDE5e4kYMBhsaG4BPvPa1xd/oEanlxPzL0BznUXrDw9bAdlYRvA==
+sc-slot-game-base@2.2.1-beta.23:
+  version "2.2.1-beta.23"
+  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-2.2.1-beta.23.tgz#b8efba91677951a39ab63ede05b38b711ad5d684"
+  integrity sha512-BXFXirMbKmt9L4UOvLnmjNqXQ88SWZT6Rf+kWx3lGuo1Isbzdoxl+3p2QhIrNAzj0UshMQioTtgXWippWrOAXA==
   dependencies:
     "@nats-io/jetstream" "^3.0.2"
     "@nats-io/nats-core" "^3.0.2"
