@@ -21,12 +21,13 @@
     "license": "ISC",
     "type": "module",
     "dependencies": {
-        "sc-slot-game-base": "2.2.1-beta.25"
+        "sc-slot-game-base": "2.2.1-beta.26"
     },
     "resolutions": {
         "socket.io-prom-metrics": "1.0.3",
         "sc-game-management-client": "0.1.4-beta.0"
     },
+
     "devDependencies": {
         "@babel/preset-env": "^7.11.5",
         "@commitlint/cli": "^9.1.2",
