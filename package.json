@@ -21,7 +21,7 @@
     "license": "ISC",
     "type": "module",
     "dependencies": {
-        "sc-slot-game-base": "2.2.1-beta.38"
+        "sc-slot-game-base": "2.2.1-beta.39"
     },
     "resolutions": {
         "socket.io-prom-metrics": "1.0.3",
