@@ -7,7 +7,7 @@
         "integration-test": "jest tests/integration-tests/index.test.js --ci --reporters=default --reporters=jest-junit --forceExit",
         "test": "jest --testPathPattern=tests/unit-tests/",
         "test-coverage": "jest --testPathPattern=tests/unit-tests/ --collect-coverage",
-        "dev": "set APP_NAME=heroesslot&& nodemon --es-module-specifier-resolution=node --watch ./src ./src/app.js",
+        "dev": "set APP_NAME=happyfish&& nodemon --es-module-specifier-resolution=node --watch ./src ./src/app.js",
         "debug": "set APP_NAME=slot_servive && nodemon --es-module-specifier-resolution=node --watch ./ --inspect ./src/app.js",
         "prod": "node --max-old-space-size=8192 --es-module-specifier-resolution=node ./src/app.js",
         "reg": "npm set registry https://npm.lumigame.com"
@@ -21,7 +21,7 @@
     "license": "ISC",
     "type": "module",
     "dependencies": {
-        "sc-slot-game-base": "2.2.1-beta.40"
+        "sc-slot-game-base": "2.2.1-beta.41"
     },
     "resolutions": {
         "socket.io-prom-metrics": "1.0.3",
