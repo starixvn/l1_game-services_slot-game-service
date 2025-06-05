@@ -64,6 +64,7 @@ export default {
     },
     natsOptions: {
         streams: {
+            subjectPrefix: "sg-sit",
             jackpotPools: {
                 name: "sg_sit_slots_jackpot_pools",
             },
