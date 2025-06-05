@@ -62,4 +62,17 @@ export default {
     gameManagementApiSettings: {
         BASE: "http://l2-game-management-service-local2-service:5000",
     },
+    natsOptions: {
+        streams: {
+            jackpotPools: {
+                name: "vg_local2_slots_jackpot_pools",
+            },
+            jackpotWinners: {
+                name: "vg_local2_slots_jackpot_winners",
+            },
+        },
+        connectionOptions: {
+            servers: "nats://10.10.50.122:4222",
+        },
+    },
 };

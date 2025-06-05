@@ -58,4 +58,17 @@ export default {
     gameManagementApiSettings: {
         BASE: "http://l1_game_management_service_prod:5000",
     },
+    natsOptions: {
+        streams: {
+            jackpotPools: {
+                name: "sg_prod_slots_jackpot_pools",
+            },
+            jackpotWinners: {
+                name: "sg_prod_slots_jackpot_winners",
+            },
+        },
+        connectionOptions: {
+            servers: "nats://vn-sc-nats-prod.nebula.prod",
+        },
+    },
 };
