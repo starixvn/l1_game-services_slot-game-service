@@ -58,4 +58,9 @@ export default {
     gameManagementApiSettings: {
         BASE: "https://l1-proxy.lumigame.com/game-management-service",
     },
+    promotionApiSettings: {
+        baseUrl: "https://l1-proxy2.lumigame.com/game-promotion-api/",
+        timeout: 5000,
+        useAuthentication: false,
+    },
 };
