@@ -1,148 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="8" failures="8" errors="0" time="626.827">
-  <testsuite name="signin" errors="0" failures="8" skipped="0" timestamp="2025-06-13T06:43:07" time="626.679" tests="8">
-    <testcase classname="signin should receive signed in response" name="signin should receive signed in response" time="120.004">
-      <failure>Error: thrown: &quot;Exceeded timeout of 120000 ms for a test.
-Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.&quot;
-    at it (D:\Lumi\slot-game-service\tests\integration-tests\sign-in.test.js:7:9)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\sign-in.test.js:6:5)
-    at Object.&lt;anonymous&gt; (D:\Lumi\slot-game-service\tests\integration-tests\index.test.js:27:1)
-    at Runtime._execModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:882:12)
-    at jestAdapter (D:\Lumi\slot-game-service\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at runTestInternal (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+<testsuites name="jest tests" tests="8" failures="0" errors="0" time="27.59">
+  <testsuite name="signin" errors="0" failures="0" skipped="0" timestamp="2025-06-13T09:07:44" time="27.463" tests="8">
+    <testcase classname="signin should receive signed in response" name="signin should receive signed in response" time="0.139">
     </testcase>
-    <testcase classname="when user joins game should return game configs" name="when user joins game should return game configs" time="120.007">
-      <failure>Error: thrown: &quot;Exceeded timeout of 120000 ms for a test.
-Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.&quot;
-    at it (D:\Lumi\slot-game-service\tests\integration-tests\in-game.test.js:7:9)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\in-game.test.js:6:5)
-    at Object.&lt;anonymous&gt; (D:\Lumi\slot-game-service\tests\integration-tests\index.test.js:28:1)
-    at Runtime._execModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:882:12)
-    at jestAdapter (D:\Lumi\slot-game-service\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at runTestInternal (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    <testcase classname="when user joins game should return game configs" name="when user joins game should return game configs" time="0.189">
     </testcase>
-    <testcase classname="when user joins game should return user info" name="when user joins game should return user info" time="120.014">
-      <failure>Error: thrown: &quot;Exceeded timeout of 120000 ms for a test.
-Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.&quot;
-    at it (D:\Lumi\slot-game-service\tests\integration-tests\in-game.test.js:90:9)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\in-game.test.js:6:5)
-    at Object.&lt;anonymous&gt; (D:\Lumi\slot-game-service\tests\integration-tests\index.test.js:28:1)
-    at Runtime._execModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:882:12)
-    at jestAdapter (D:\Lumi\slot-game-service\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at runTestInternal (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    <testcase classname="when user joins game should return user info" name="when user joins game should return user info" time="0.197">
     </testcase>
-    <testcase classname="settle when win bonus should receive bonus" name="settle when win bonus should receive bonus" time="0">
-      <failure>Error: thrown: &quot;Exceeded timeout of 120000 ms for a hook.
-Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.&quot;
-    at beforeAll (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:41:13)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:38:9)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:37:5)
-    at Object.&lt;anonymous&gt; (D:\Lumi\slot-game-service\tests\integration-tests\index.test.js:29:1)
-    at Runtime._execModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:882:12)
-    at jestAdapter (D:\Lumi\slot-game-service\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at runTestInternal (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    <testcase classname="settle when win bonus should receive bonus" name="settle when win bonus should receive bonus" time="0.212">
     </testcase>
-    <testcase classname="settle when win bonus when user open bonus box should receive bonus chest winning amount" name="settle when win bonus when user open bonus box should receive bonus chest winning amount" time="0">
-      <failure>Error: thrown: &quot;Exceeded timeout of 120000 ms for a hook.
-Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.&quot;
-    at beforeAll (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:41:13)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:38:9)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:37:5)
-    at Object.&lt;anonymous&gt; (D:\Lumi\slot-game-service\tests\integration-tests\index.test.js:29:1)
-    at Runtime._execModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:882:12)
-    at jestAdapter (D:\Lumi\slot-game-service\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at runTestInternal (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    <testcase classname="settle when win bonus when user open bonus box should receive bonus chest winning amount" name="settle when win bonus when user open bonus box should receive bonus chest winning amount" time="0.005">
     </testcase>
-    <testcase classname="settle when win freeSpin should receive result having free spins" name="settle when win freeSpin should receive result having free spins" time="0.001">
-      <failure>Error: thrown: &quot;Exceeded timeout of 120000 ms for a hook.
-Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.&quot;
-    at beforeAll (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:83:13)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:80:9)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:37:5)
-    at Object.&lt;anonymous&gt; (D:\Lumi\slot-game-service\tests\integration-tests\index.test.js:29:1)
-    at Runtime._execModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:882:12)
-    at jestAdapter (D:\Lumi\slot-game-service\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at runTestInternal (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    <testcase classname="settle when win freeSpin should receive result having free spins" name="settle when win freeSpin should receive result having free spins" time="0.138">
     </testcase>
-    <testcase classname="settle when win freeSpin when process free spins should receive endBet with correct bet value &amp; freeSpin is true" name="settle when win freeSpin when process free spins should receive endBet with correct bet value &amp; freeSpin is true" time="0.001">
-      <failure>Error: thrown: &quot;Exceeded timeout of 120000 ms for a hook.
-Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.&quot;
-    at beforeAll (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:83:13)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:80:9)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:37:5)
-    at Object.&lt;anonymous&gt; (D:\Lumi\slot-game-service\tests\integration-tests\index.test.js:29:1)
-    at Runtime._execModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:882:12)
-    at jestAdapter (D:\Lumi\slot-game-service\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at runTestInternal (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    <testcase classname="settle when win freeSpin when process free spins should receive endBet with correct bet value &amp; freeSpin is true" name="settle when win freeSpin when process free spins should receive endBet with correct bet value &amp; freeSpin is true" time="0.127">
     </testcase>
-    <testcase classname="settle when win freeSpin when process free spins should receive finish with betByFreeSpin is true" name="settle when win freeSpin when process free spins should receive finish with betByFreeSpin is true" time="0">
-      <failure>Error: thrown: &quot;Exceeded timeout of 120000 ms for a hook.
-Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.&quot;
-    at beforeAll (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:83:13)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:80:9)
-    at _dispatchDescribe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:91:26)
-    at describe (D:\Lumi\slot-game-service\node_modules\jest-circus\build\index.js:55:5)
-    at describe (D:\Lumi\slot-game-service\tests\integration-tests\settle.test.js:37:5)
-    at Object.&lt;anonymous&gt; (D:\Lumi\slot-game-service\tests\integration-tests\index.test.js:29:1)
-    at Runtime._execModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runtime\build\index.js:882:12)
-    at jestAdapter (D:\Lumi\slot-game-service\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at runTestInternal (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (D:\Lumi\slot-game-service\node_modules\jest-config\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    <testcase classname="settle when win freeSpin when process free spins should receive finish with betByFreeSpin is true" name="settle when win freeSpin when process free spins should receive finish with betByFreeSpin is true" time="0.091">
     </testcase>
   </testsuite>
 </testsuites>
