@@ -7180,10 +7180,10 @@ sc-game-management-client@0.1.4, sc-game-management-client@^0.1.0:
     axios "1.6.2"
     axios-retry "^4.0.0"
 
-sc-game-service-integration-utils@2.3.1-beta.0:
-  version "2.3.1-beta.0"
-  resolved "http://npm.lumigame.com/sc-game-service-integration-utils/-/sc-game-service-integration-utils-2.3.1-beta.0.tgz#50b6d86a370c12257352f560950faf7fcc920228"
-  integrity sha512-zYL1UywQf5pRJIOX0IiU17CcKmebXHgQvddKCTDrHszWe7htZMro43OItn7vvX/T4Si9HTyDyHil7D7Gl+78MQ==
+sc-game-service-integration-utils@2.3.1:
+  version "2.3.1"
+  resolved "http://npm.lumigame.com/sc-game-service-integration-utils/-/sc-game-service-integration-utils-2.3.1.tgz#e0c0a148378c4d217f71999dd426e0dd03de8335"
+  integrity sha512-8l8kcmTnW6KGunPMPdo9Zdxd50/JJ3cWnUY+MLaQsfUsz1sRpz+ayFO/Ma5XHNJ5yBeMbFyKhul40E+oYAcvLA==
   dependencies:
     lodash.matches "^4.6.0"
     nock "^13.2.1"
@@ -7228,7 +7228,7 @@ sc-pf-client-seed@^1.0.5:
 
 sc-slot-game-base@2.3.1:
   version "2.3.1"
-  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-2.3.1.tgz#0438fe0edfeb63bd5c62d80f2bc5fa27d2a45a6d"
+  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-2.3.1.tgz#0438fe0edfeb63bd5c62d80f2bc5fa27d2a45a6d"
   integrity sha512-Lm3k39mc9f96UuMNkmMOCfKdF4sXvsPDpB4m7fpvimFjoSyf7niMdgaTEtQWDGRdUl9FfHrQ1vD37ccTOfK+sw==
   dependencies:
     "@nats-io/jetstream" "^3.0.2"
