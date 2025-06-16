@@ -7180,10 +7180,10 @@ sc-game-management-client@0.1.4, sc-game-management-client@^0.1.0:
     axios "1.6.2"
     axios-retry "^4.0.0"
 
-sc-game-service-integration-utils@2.3.0:
-  version "2.3.0"
-  resolved "https://npm.lumigame.com/sc-game-service-integration-utils/-/sc-game-service-integration-utils-2.3.0.tgz#fb7342e63b47f80888f34563c4d945a0dd3c47da"
-  integrity sha512-ZsZ6eborrAo5BrF47cd3uVhw2Vp1nmqMQU37IAOITGcPz7LOaOeyGW/RtZCEvflCUNUzOGsaS0PVGTtOTIQhCg==
+sc-game-service-integration-utils@2.3.1-beta.0:
+  version "2.3.1-beta.0"
+  resolved "http://npm.lumigame.com/sc-game-service-integration-utils/-/sc-game-service-integration-utils-2.3.1-beta.0.tgz#50b6d86a370c12257352f560950faf7fcc920228"
+  integrity sha512-zYL1UywQf5pRJIOX0IiU17CcKmebXHgQvddKCTDrHszWe7htZMro43OItn7vvX/T4Si9HTyDyHil7D7Gl+78MQ==
   dependencies:
     lodash.matches "^4.6.0"
     nock "^13.2.1"
