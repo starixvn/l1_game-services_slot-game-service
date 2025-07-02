@@ -18,21 +18,4 @@ export default class SlotGameContainerRegistry extends Slot.SlotContainerRegistr
             jackpotsRepository: asValue(Jackpots),
         });
     }
-
-    register(appConfigs, definition, gameData) {
-        const container = super.register(appConfigs, definition, gameData);
-
-        // Register config object for userSignInConsumer
-        container.register({
-            config: asValue({
-                playGamePermissionValidator: container.resolve("playGamePermissionValidator"),
-                appConfigs: container.resolve("appConfigs"),
-                gameManagementApiClientFactory: container.resolve("gameManagementApiClientFactory"),
-                logService: container.resolve("logService"),
-                gamePromotionApiClient: container.resolve("gamePromotionApiClient"),
-            }),
-        });
-
-        return container;
-    }
 }
