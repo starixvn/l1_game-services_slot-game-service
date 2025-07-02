@@ -6953,10 +6953,10 @@ sc-pf-client-seed@^1.0.5:
   dependencies:
     chance "^1.1.11"
 
-sc-slot-game-base@2.3.0-beta.48:
-  version "2.3.0-beta.48"
-  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-2.3.0-beta.48.tgz"
-  integrity sha512-0J9BOR/5/te6cQfqut0VDkcyTsfcS1BRzpxV8VfV75y73G6+unQ/hkvsaMAffrJqn/juqQ27Y9uhHMZnd/ZbxA==
+sc-slot-game-base@2.3.0-beta.49:
+  version "2.3.0-beta.49"
+  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-2.3.0-beta.49.tgz"
+  integrity sha512-ak5aQTuRhzLueTwsqjjacuabkZqdgpfcbMuBNr3IabxSm2cu34geTuf+difNTAN/Cf0aA+yuobLUE2C5mSL1dA==
   dependencies:
     "@sc/game-promotion-api-client" "^1.0.1-beta.12"
     chance "^1.1.9"
