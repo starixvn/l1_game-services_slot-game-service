@@ -1840,7 +1840,7 @@
   resolved "http://npm.lumigame.com/@protobufjs/utf8/-/utf8-1.1.0.tgz"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@sc/game-promotion-api-client@^1.0.1-beta.23", "@sc/game-promotion-api-client@^1.0.1-beta.24", "@sc/game-promotion-api-client@1.0.1-beta.24":
+"@sc/game-promotion-api-client@^1.0.1-beta.24", "@sc/game-promotion-api-client@1.0.1-beta.24":
   version "1.0.1-beta.24"
   resolved "http://npm.lumigame.com/@sc/game-promotion-api-client/-/game-promotion-api-client-1.0.1-beta.24.tgz"
   integrity sha512-CNL6RuDIkvl62JBYgEW7qsrTPei1zDauPuCB7WscNtk8PNYw6sPjyQj0+pFFk5tW9pxNss7eooQAvO0o6mcwqQ==
@@ -6866,10 +6866,10 @@ sc-common@1.8.1:
     mongoose-long "^0.3.0"
     numeral "^2.0.6"
 
-sc-game-base@6.0.0-beta.97:
-  version "6.0.0-beta.97"
-  resolved "http://npm.lumigame.com/sc-game-base/-/sc-game-base-6.0.0-beta.97.tgz"
-  integrity sha512-aYwhzpkS3pHnbj5aoj4AumLfXtPVbDAgF0lwRuL/krgQQ+PFiMROdJdnFz5lDUvOzJjkLttULhrwhgURCI2CwA==
+sc-game-base@6.0.0-beta.98:
+  version "6.0.0-beta.98"
+  resolved "http://npm.lumigame.com/sc-game-base/-/sc-game-base-6.0.0-beta.98.tgz"
+  integrity sha512-yNfFseRyNuQeceWX0zLo38EA+rslxoaCKAdm01cGzCblV2jS/NoMapd3DPdi4tWzCMuX4+AJHHwVHDtXnGMCBA==
   dependencies:
     "@sc/game-promotion-api-client" "^1.0.1-beta.24"
     awilix "^8.0.0"
@@ -6953,15 +6953,14 @@ sc-pf-client-seed@^1.0.5:
   dependencies:
     chance "^1.1.11"
 
-sc-slot-game-base@2.3.0-beta.135:
-  version "2.3.0-beta.135"
-  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-2.3.0-beta.135.tgz"
-  integrity sha512-I1LoB7tS2mBiAgrlohN9dXs8HadjsVhnU1ceRt6n6PQeZ7rJlgKwXzPgF/AQo0tDLhb5aIUdAtcGkTIcvP2Uuw==
+sc-slot-game-base@2.3.0-beta.137:
+  version "2.3.0-beta.137"
+  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-2.3.0-beta.137.tgz"
+  integrity sha512-WCuk/Y4dbjI5Xv/lejLYHdnxVVxKK1yWF04guSVkmd4UPNESGHfhpCGVxdl1VhJZQtb4VWCo7YWjJYdYx9RdKw==
   dependencies:
-    "@sc/game-promotion-api-client" "^1.0.1-beta.23"
     chance "^1.1.9"
     lodash "^4.17.21"
-    sc-game-base "6.0.0-beta.97"
+    sc-game-base "6.0.0-beta.98"
 
 semver-compare@^1.0.0:
   version "1.0.0"
