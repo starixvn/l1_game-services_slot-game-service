@@ -58,4 +58,7 @@ export default {
     gameManagementApiSettings: {
         BASE: "https://l1-proxy.lumigame.com/game-management-service",
     },
+    tracking: {
+        baseUrl: "https://l1-proxy2.lumigame.com/user-tracking-api",
+    },
 };
