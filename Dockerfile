@@ -1,8 +1,8 @@
 FROM hub.lumigame.com/docker-hub/library/node:20.18.2-alpine AS builder
 WORKDIR /app
-COPY package.json yarn.lock .modprunerrc ./
+COPY package.json package-lock.json .modprunerrc ./
 RUN npm run reg \
-    && yarn install --production \
+    && npm ci --only=production \
     && npx mod-pruner prune --force
 COPY ./src/ .
 
