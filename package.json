@@ -24,7 +24,7 @@
     "dependencies": {
         "extensionless": "^1.9.9",
         "mongoose": "6.13.8",
-        "sc-slot-game-base": "2.2.4-beta.14"
+        "sc-slot-game-base": "2.2.4-beta.15"
     },
     "overrides": {
         "mongoose": "6.13.8",
