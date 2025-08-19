@@ -23,6 +23,7 @@
     "type": "module",
     "dependencies": {
         "extensionless": "^1.9.9",
+        "mongoose": "6.13.8",
         "sc-slot-game-base": "2.2.4-beta.14"
     },
     "overrides": {
