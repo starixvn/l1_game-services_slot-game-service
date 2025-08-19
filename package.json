@@ -11,7 +11,7 @@
         "debug": "set APP_NAME=slot_servive && nodemon --import=extensionless/register --watch ./ --inspect ./src/app.js",
         "prod": "node --import=extensionless/register --max-old-space-size=8192 ./src/app.js",
         "reg": "npm set registry https://npm.lumigame.com",
-        "prepare": "husky"
+        "prepare-husky": "husky"
     },
     "jestSonar": {
         "reportPath": "reports",
