@@ -1,5 +1,4 @@
-import { addIdentifiers, initializer, initSpanProcessor } from "sc-instrument";
-import appConfigs from "./app-configs";
+import appConfigs from "./app-configs.js";
 
 import { logger } from "sc-common";
 import { Core } from "sc-game-base";
@@ -11,13 +10,6 @@ import SlotGameContainerRegistry from "./slot-game-container-registry";
 const run = async () => {
     const appName = process.env.APP_NAME;
     const gameName = appName ? appName.replace("service", "").replaceAll("_", "") : "";
-
-    if (appConfigs.otel?.enabled) {
-        const { otel } = appConfigs;
-        initSpanProcessor(otel.endpoint, initializer);
-        addIdentifiers(`${otel.system} - ${appName}`, appConfigs.sentry.env, initializer);
-        initializer.start();
-    }
 
     if (appName) {
         appConfigs.database.url = appConfigs.database.url.concat(`&appName=${gameName.toLowerCase()}`);
@@ -49,10 +41,5 @@ const run = async () => {
         console.log("App Name is not defined, failed to boostrap the service");
     }
 };
-
-process.on("exit", async (code) => {
-    console.log(`About to exit with code: ${code}`);
-    await initializer.shutdown();
-});
 
 run();

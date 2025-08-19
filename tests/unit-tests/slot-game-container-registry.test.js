@@ -19,6 +19,6 @@ describe("extends", () => {
         //Arrange
         const registry = new SlotGameContainerRegistry();
         // Assert
-        expect(registry instanceof SlotContainerRegistry);
+        expect(registry instanceof SlotContainerRegistry).toBe(true);
     });
 });
