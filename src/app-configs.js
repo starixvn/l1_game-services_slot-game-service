@@ -2,8 +2,8 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://api.lumigame.com",
-        authUrl: "http://auth.lumigame.com",
+        apiUrl: "https://l1-proxy1.lumigame.com/game-api",
+        authUrl: "https://l1-auth1.lumigame.com",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
@@ -22,21 +22,20 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://127.0.0.1:27017",
+        url: "mongodb://lmn_backend:LmnBackend@10.10.50.12:39101,10.10.50.13:39101,10.10.50.14:39101/?replicaSet=L1pLocal",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            auto_reconnect: true,
         },
     },
     sentry: {
-        sentryUrl: "https://8f52d1ed1dbc4500adddbfb6e20f66aa@sentryuat.sabagame.com/217",
+        sentryUrl: "https://8eb9632f2663e57c838ec83febbee14f@sentry-k8s.lumigame.com/4",
         logIdentifier: "fourguardians",
-        env: "LOCAL",
+        env: "DEV",
     },
     authenticateSettings: {
-        url: "http://auth.lumigame.com",
+        url: "https://l1-auth1.lumigame.com",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -44,7 +43,10 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://127.0.0.1:5000",
+        url: "http://l1-proxy1.lumigame.com/user",
+    },
+    notificationServiceSettings: {
+        url: "http://l1-proxy1.lumigame.com/notification/api",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     freeSpinLiveSeconds: 86400, // 1 day
@@ -56,9 +58,9 @@ export default {
         endpoint: "http://10.10.50.69:14268/api/traces",
     },
     gameManagementApiSettings: {
-        BASE: "https://l1-proxy.lumigame.com/game-management-service",
+        BASE: "https://l1-proxy1.lumigame.com/game-management-service",
     },
-    tracking: {
-        baseUrl: "https://l1-proxy2.lumigame.com/user-tracking-api",
+    trackingApiSettings: {
+        baseUrl: "https://l1-proxy1.lumigame.com/user-tracking-api",
     },
 };
