@@ -21,11 +21,12 @@
     "license": "ISC",
     "type": "module",
     "dependencies": {
-        "sc-slot-game-base": "2.3.0-beta.143",
+        "sc-slot-game-base": "2.3.0-beta.150",
         "@sc/game-promotion-api-client": "1.0.1-beta.24"
     },
     "resolutions": {
-        "socket.io-prom-metrics": "1.0.3"
+        "mongoose": "^6.13.6",
+        "sc-common": "2.0.0"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.11.5",
