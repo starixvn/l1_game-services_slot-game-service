@@ -1,0 +1,22 @@
+{
+    "name": "socket-client-tests",
+    "version": "1.0.0",
+    "description": "Simple socket client tests for slot game service",
+    "type": "module",
+    "main": "simpleTest.js",
+    "scripts": {
+        "test": "node simpleTest.js",
+        "test:connection": "node simpleTest.js connection",
+        "test:basic": "node simpleTest.js basic"
+    },
+    "dependencies": {
+        "socket.io-client": "^4.0.0"
+    },
+    "keywords": [
+        "socket",
+        "testing",
+        "slot-game"
+    ],
+    "author": "Game Development Team",
+    "license": "ISC"
+}

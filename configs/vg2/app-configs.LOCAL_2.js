@@ -59,7 +59,12 @@ export default {
         endpoint: "http://10.10.50.69:4318/v1/traces",
     },
     gameManagementApiSettings: {
-        BASE: "http://l2-game-management-service-local2-service:5000",
+        BASE: "https://l2-proxy2.lumigame.com/game-management-service",
+    },
+    promotionApiSettings: {
+        baseUrl: "https://l2-proxy2.lumigame.com/game-promotion-api/",
+        timeout: 5000,
+        useAuthentication: false,
     },
     trackingApiSettings: {
         baseUrl: "http://l2-user-tracking-api-local2-service:5000",

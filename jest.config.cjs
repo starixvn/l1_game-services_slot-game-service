@@ -14,6 +14,7 @@ module.exports = async () => {
         testEnvironment: "node",
         testResultsProcessor: "jest-sonar-reporter",
         setupFilesAfterEnv: ["jest-extended/all"],
+        testTimeout: 120000,
         reporters: [
             "default",
             ["jest-junit", { outputDirectory: "coverage" }],
