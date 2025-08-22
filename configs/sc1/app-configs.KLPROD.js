@@ -31,7 +31,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://58fc00e79ab34a3bab04a79038760cb8@sentry-scklprod-ovs.ops-klprod.gamora.prod/8",
+        sentryUrl: "http://50e405ebce7003a0e1edbda2bf28b14c@sentrypro-sc.ops-klprod.gamora.prod/3",
         logIdentifier: "fourguardians",
         env: "PROD",
     },
@@ -56,5 +56,8 @@ export default {
     enableMsgpackParser: true,
     gameManagementApiSettings: {
         BASE: "http://l1-game-management-service-klprod-service:5000",
+    },
+    trackingApiSettings: {
+        baseUrl: "http://l1-user-tracking-api-klprod-service:5000",
     },
 };

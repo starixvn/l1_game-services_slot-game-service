@@ -46,7 +46,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://c359ef6bf2244e868ff63fbc93e54d1b@sentry.lumigame.com/27",
+        sentryUrl: "https://8eb9632f2663e57c838ec83febbee14f@sentry-k8s.lumigame.com/4",
         logIdentifier: "fourguardians",
         env: "LOCAL_2",
     },
@@ -61,7 +61,7 @@ export default {
     gameManagementApiSettings: {
         BASE: "http://l2-game-management-service-local2-service:5000",
     },
-    tracking: {
+    trackingApiSettings: {
         baseUrl: "http://l2-user-tracking-api-local2-service:5000",
     },
 };
