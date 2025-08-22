@@ -61,7 +61,7 @@ export default {
     gameManagementApiSettings: {
         BASE: "http://l1-game-management-service-local-service:5000",
     },
-    tracking: {
+    trackingApiSettings: {
         baseUrl: "http://l1-user-tracking-api-local-service:5000",
     },
 };
