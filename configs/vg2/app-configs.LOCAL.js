@@ -68,4 +68,9 @@ export default {
     trackingApiSettings: {
         baseUrl: "http://l2-user-tracking-api-local-service:5000",
     },
+    promotionApiSettings: {
+        baseUrl: "http://l2-game-promotion-api-local-service:5000",
+        timeout: 5000,
+        useAuthentication: false,
+    },
 };
