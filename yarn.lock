@@ -2247,10 +2247,10 @@
   dependencies:
     "@opentelemetry/instrumentation" "^0.52.0 || ^0.53.0 || ^0.54.0 || ^0.55.0 || ^0.56.0 || ^0.57.0"
 
-"@sc/game-promotion-api-client@1.0.5-beta.1":
-  version "1.0.5-beta.1"
-  resolved "https://npm.lumigame.com/@sc/game-promotion-api-client/-/game-promotion-api-client-1.0.5-beta.1.tgz#528bdc67ef325335053e41520993a504bad44a04"
-  integrity sha512-2DhGDvSY5MWxxPpZzYKNk6l5xEyD7G738mElTsgneHg047ksnk5g1hBKlNRFceeQAqSqohLm7c6qv5DHDYVLNg==
+"@sc/game-promotion-api-client@1.0.5-beta.2":
+  version "1.0.5-beta.2"
+  resolved "https://npm.lumigame.com/@sc/game-promotion-api-client/-/game-promotion-api-client-1.0.5-beta.2.tgz#472d2361a2298bd35bc4a0f610733b231732272a"
+  integrity sha512-uVJUzHCo3SUpn4a3mnImVaz2POB/CE9kHT/7Dpm+ksnOm9Fm3AIBLhosNpQp/kgO4tLt+A9Ixc6T6pIWP74AcA==
   dependencies:
     axios "^1.6.0"
 
@@ -7623,12 +7623,12 @@ sc-common@3.0.0:
     mongoose-long "0.8.0"
     numeral "2.0.6"
 
-sc-game-base@6.3.4-beta.11:
-  version "6.3.4-beta.11"
-  resolved "https://npm.lumigame.com/sc-game-base/-/sc-game-base-6.3.4-beta.11.tgz#ccf29e7d26d5ffb01eaaeb7bdf0a97b6ee02781a"
-  integrity sha512-wa2vUqhgCs2WXA1svPJ7ouNWn5eHkP2IGA0rDZ5ARRo+ADLRjijWsl6B/VuZqlXySzmLkBk43hgXdIRZ1SqQBg==
+sc-game-base@6.3.4-beta.15:
+  version "6.3.4-beta.15"
+  resolved "https://npm.lumigame.com/sc-game-base/-/sc-game-base-6.3.4-beta.15.tgz#f16442ae4743c6b95863e12bc52374427f1e49df"
+  integrity sha512-xRhsYVpeiGDEo2B2jiCuXtSff5RhIx97Yux0Gztd5gbbb+hyliGz0KwC2UgwbVVY9WqK/isCQj33q93VIn0Iuw==
   dependencies:
-    "@sc/game-promotion-api-client" "1.0.5-beta.1"
+    "@sc/game-promotion-api-client" "1.0.5-beta.2"
     "@sc/user-tracking-client" "1.0.0"
     awilix "8.0.0"
     axios "1.0.0"
@@ -7688,14 +7688,14 @@ sc-pf-client-seed@1.0.5:
   dependencies:
     chance "^1.1.11"
 
-sc-slot-game-base@3.2.3-beta.11:
-  version "3.2.3-beta.11"
-  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-3.2.3-beta.11.tgz#096445394eb79f1d67f1d75defe0eadac7f9e955"
-  integrity sha512-hzSODtu1tyEArnIuzBYYERRKfdRZW33rF6ugO9QBU8lpPYRnoe7atMoeOFgeelTNi4N8dLbZ4NDv9Lnp3CCPtQ==
+sc-slot-game-base@3.2.3-beta.15:
+  version "3.2.3-beta.15"
+  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-3.2.3-beta.15.tgz#d0ebf084fe077f83d86277bf44b3bb48ce031f67"
+  integrity sha512-AaQqw3B0TkS3Kgr6MYhH5sy5L25XtKWx49Jzq1OT23/g9KbLaODxvAjNq1grx18ZqeU2LfJqUs+ZEjjM8J+nTQ==
   dependencies:
     chance "^1.1.9"
     lodash "^4.17.21"
-    sc-game-base "6.3.4-beta.11"
+    sc-game-base "6.3.4-beta.15"
     sc-game-management-client "0.1.6"
 
 "semver@2 || 3 || 4 || 5", semver@^5.5.0, semver@^5.6.0, semver@^5.7.1:
