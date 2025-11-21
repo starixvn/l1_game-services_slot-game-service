@@ -7623,10 +7623,10 @@ sc-common@3.0.0:
     mongoose-long "0.8.0"
     numeral "2.0.6"
 
-sc-game-base@6.3.4-beta.16:
-  version "6.3.4-beta.16"
-  resolved "https://npm.lumigame.com/sc-game-base/-/sc-game-base-6.3.4-beta.16.tgz#5c641f5db2b44ae3512cb8b2c274babe488d057b"
-  integrity sha512-tJoaU+EalrNVEnctz2vSPlwLpAFK5K9UhS7YhvGIFiZhbPa1x25U6SlFRV/qUYyPD29TMvHkFrG8FTWMDft8gA==
+sc-game-base@6.3.4-beta.22:
+  version "6.3.4-beta.22"
+  resolved "https://npm.lumigame.com/sc-game-base/-/sc-game-base-6.3.4-beta.22.tgz#878daf157a2360a54fe9d4c31022c94df8d97b6d"
+  integrity sha512-gfu5AxveAzMmFoJu8Di7J4vbxhiUZqkAq1+yOHFVQjD9GAPJk+GuBG5gRvD3R7vCo83qlIa11+KGH99LE131pw==
   dependencies:
     "@sc/game-promotion-api-client" "1.0.5"
     "@sc/user-tracking-client" "1.0.0"
@@ -7688,14 +7688,14 @@ sc-pf-client-seed@1.0.5:
   dependencies:
     chance "^1.1.11"
 
-sc-slot-game-base@3.2.3-beta.16:
-  version "3.2.3-beta.16"
-  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-3.2.3-beta.16.tgz#32551194bd37b80c8e2a89e6df0b7c182e7f9248"
-  integrity sha512-rgOa1LbCI63lrCDog8nbaqxZ2Rb4ecL99NWNGl8poZW5cww7txN5deH0nH+BCe/tv8IFYNH7SqBShkwfPkAP/Q==
+sc-slot-game-base@3.2.3-beta.22:
+  version "3.2.3-beta.22"
+  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-3.2.3-beta.22.tgz#250299c5e6dcffdd930d1534ef0bc9f28e37a5f4"
+  integrity sha512-0gjXYK8JI4gPp+bI+D6HB+9Jpnv5/hWUD++e6wtYEaLtUW3KAg44M8gpUHqLKczwndMIkPwimonfG8UE5PNt9A==
   dependencies:
     chance "^1.1.9"
     lodash "^4.17.21"
-    sc-game-base "6.3.4-beta.16"
+    sc-game-base "6.3.4-beta.22"
     sc-game-management-client "0.1.6"
 
 "semver@2 || 3 || 4 || 5", semver@^5.5.0, semver@^5.6.0, semver@^5.7.1:
