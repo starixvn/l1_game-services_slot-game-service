@@ -7,8 +7,8 @@
         "integration-test": "jest tests/integration-tests/index.test.js --ci --reporters=default --reporters=jest-junit --forceExit",
         "test": "jest --testPathPattern=tests/unit-tests/",
         "test-coverage": "jest --testPathPattern=tests/unit-tests/ --collect-coverage",
-        "dev": "set APP_NAME=summerheat&& nodemon --import=extensionless/register --watch ./src ./src/app.js",
-        "debug": "set APP_NAME=slot_servive && nodemon --import=extensionless/register --watch ./ --inspect ./src/app.js",
+        "dev": "set APP_NAME=templeofcaishen&& nodemon --import=extensionless/register --watch ./src ./src/app.js",
+        "debug": "set APP_NAME=templeofcaishen&& nodemon --import=extensionless/register --watch ./ --inspect ./src/app.js",
         "prod": "node --import=extensionless/register --max-old-space-size=8192 ./src/app.js",
         "reg": "npm set registry https://npm.lumigame.com",
         "prepare-husky": "husky"
@@ -28,10 +28,12 @@
     },
     "overrides": {
         "mongoose": "6.13.8",
-        "mongoose-long": "0.8.0"
+        "mongoose-long": "0.8.0",
+        "bson": "4.7.2"
     },
     "resolutions": {
-        "socket.io-prom-metrics": "1.0.3"
+        "socket.io-prom-metrics": "1.0.3",
+        "bson": "4.7.2"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.11.5",
