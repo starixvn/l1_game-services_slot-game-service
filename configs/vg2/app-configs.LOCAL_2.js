@@ -51,7 +51,7 @@ export default {
         env: "LOCAL_2",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    freeSpinLiveSeconds: 300, // 1 day
+    freeSpinLiveSeconds: 60, // 1 minute
     bonusLiveSeconds: 125,
     otel: {
         system: "VG",
