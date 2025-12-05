@@ -31,7 +31,7 @@
         "mongoose-long": "0.8.0"
     },
     "resolutions": {
-        "socket.io-prom-metrics": "1.0.3"
+        "socket.io-prom-metrics": "1.0.14"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.11.5",
